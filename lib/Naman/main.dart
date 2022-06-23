@@ -31,7 +31,10 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Text(
               quote.text,
+
+
               style: TextStyle(
+                fontFamily:('valorant'),
                 fontSize: 25.0,
                 color: Colors.black,
               ),
@@ -52,22 +55,37 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Valorex"),
-        backgroundColor: Colors.black,
-      ),
-      body: Column(
-        children: quotes.map((quote) => quoteTemplate(quote)).toList(),
-      ),
+    return SafeArea(
+      child: Scaffold(
+        appBar:AppBar(
 
-      drawer: Drawer(),
-      floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.black ,
-           child: Icon(Icons.refresh)
-       ),
+            title: Center(
+              child:Container(
+                margin: EdgeInsets.fromLTRB(0,7,0,0),
+                child:Text("Valorex",
+                    style: TextStyle(
+                      fontFamily: ('valorant'),
+                      fontSize: 35,
+        
 
+                    ),
+              ) ),
+            ),
+            backgroundColor: Colors.blue,
+          ),
+
+        body: Column(
+          children: quotes.map((quote) => quoteTemplate(quote)).toList(),
+        ),
+
+        drawer: Drawer(),
+        floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: Colors.black ,
+             child: Icon(Icons.refresh)
+         ),
+
+      ),
     );
 
 
