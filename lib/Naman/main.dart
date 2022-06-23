@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import'quote.dart';
+import 'quote.dart';
+
 void main() => runApp(MaterialApp(
- title: "Valorex",
-  home: HomePage(),
-  debugShowCheckedModeBanner: false,
-));
+      title: "Valorex",
+      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+    ));
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,16 +15,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   List<Quote> quotes = [
-       Quote(author: '' , text: 'AGENTS'),
-       Quote(author: '' , text: 'GUNS'),
-       Quote(author: '' , text: 'MAPS'),
+    Quote(author: '', text: 'AGENTS'),
+    Quote(author: '', text: 'GUNS'),
+    Quote(author: '', text: 'MAPS'),
   ];
 
-  Widget quoteTemplate(quote){
+  Widget quoteTemplate(quote) {
     return Card(
-      margin : EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
+      margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Column(
@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.black,
               ),
             ),
-            SizedBox (height: 10.0),
+            SizedBox(height: 10.0),
             Text(
               quote.author,
               style: TextStyle(
@@ -60,17 +60,11 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: quotes.map((quote) => quoteTemplate(quote)).toList(),
       ),
-
       drawer: Drawer(),
       floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          backgroundColor: Colors.black ,
-           child: Icon(Icons.refresh)
-       ),
-
+          backgroundColor: Colors.black,
+          child: Icon(Icons.refresh)),
     );
-
-
   }
 }
-
