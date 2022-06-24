@@ -83,19 +83,46 @@ class _HomePageState extends State<HomePage> {
           children: quotes.map((quote) => quoteTemplate(quote)).toList(),
         ),
         drawer: Drawer(
-          
+
           backgroundColor: Color(0xFF0f1923),
           child:Column(
 
             children: [
-              DrawerHeader(child:Text('ValoRex',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 40,
-                  fontFamily: 'Valorant2',
-                ),),
-              padding: EdgeInsets.all(20),
+              Container(
+                height: 150,
+
+                padding: EdgeInsets.fromLTRB(0,20, 20, 0),
+                child: CircleAvatar(
+
+                  radius: 50,
+                  backgroundColor: Color(0xFF0f1923),
+                  child:ClipRect(
+                    child:Image.asset('assets/logo/ValorexLogo Transparent.png',
+                    ),
+
+                ),
+                ),
               ),
+
+              Container(
+                height:50,
+                child: const DrawerHeader(
+                  
+                  child:Center(
+                    child: Text('ValoRex',
+                    style: TextStyle(
+
+                      color: Colors.white,
+
+                      fontSize: 30,
+                      fontFamily: 'Valorant2',
+                    ),),
+                  ),
+                padding: EdgeInsets.fromLTRB(0,10,0,0),
+                ),
+              ),
+              // Divider(height:0,thickness: 2,indent:5,endIndent: 5,
+              // color: Colors.black,)
 
 
             ],
