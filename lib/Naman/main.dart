@@ -1,10 +1,13 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import'quote.dart';
+import 'quote.dart';
+
 void main() => runApp(MaterialApp(
- title: "Valorex",
-  home: HomePage(),
-  debugShowCheckedModeBanner: false,
-));
+      title: "Valorex",
+      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+    ));
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,40 +17,34 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   List<Quote> quotes = [
-       Quote(author: '' , text: 'AGENTS'),
-       Quote(author: '' , text: 'GUNS'),
-       Quote(author: '' , text: 'MAPS'),
+    Quote(text: 'AGENTS'),
+    Quote(text: 'GUNS'),
+    Quote(text: 'MAPS'),
   ];
 
-  Widget quoteTemplate(quote){
+  Widget quoteTemplate(quote) {
     return Card(
       color: Color(0xFFedf2f7),
-      margin : EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
+      margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-
             Padding(padding: EdgeInsets.all(7)),
             Text(
               quote.text,
               style: TextStyle(
-                fontFamily:('Valorant2'),
+                fontFamily: 'Valorant2',
                 fontSize: 25.0,
-                color:Color(0xFFcf1b1e,)
-                  // 0xFFcf1b1e
+                color: Color(
+                  0xFFcf1b1e,
+                ),
+                // 0xFFcf1b1e
               ),
             ),
-            SizedBox (height: 10.0),
-            Text(
-              quote.author,
-              style: TextStyle(
-                fontSize: 0.0,
-              ),
-            ),
+            SizedBox(height: 10.0),
           ],
         ),
       ),
@@ -59,81 +56,64 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFF0f1923),
-        appBar:AppBar(
-
-            title: Center(
-              child:Container(
-                margin: EdgeInsets.fromLTRB(0,7,10,0),
-                child:Text("ValoRex",
-                    style: TextStyle(
-
-                      fontFamily: ('Valorant2'),
-                      fontSize: 35,
-                      color: Colors.white,
-        
-
-                    ),
-              ) ),
-            ),
-            backgroundColor: Color(0xFF0f1923),
+        appBar: AppBar(
+          title: Center(
+            child: Container(
+                margin: EdgeInsets.fromLTRB(0, 7, 10, 0),
+                child: Text(
+                  "ValoRex",
+                  style: TextStyle(
+                    fontFamily: 'Valorant2',
+                    fontSize: 35,
+                    color: Colors.white,
+                  ),
+                )),
           ),
-
-        body:
-        Column(
+          backgroundColor: Color(0xFF0f1923),
+        ),
+        body: Column(
           children: quotes.map((quote) => quoteTemplate(quote)).toList(),
         ),
         drawer: Drawer(
-
           backgroundColor: Color(0xFF0f1923),
-          child:Column(
-
+          child: Column(
             children: [
               Container(
                 height: 150,
-
-                padding: EdgeInsets.fromLTRB(0,20, 20, 0),
+                padding: EdgeInsets.fromLTRB(0, 20, 20, 0),
                 child: CircleAvatar(
-
                   radius: 50,
                   backgroundColor: Color(0xFF0f1923),
-                  child:ClipRect(
-                    child:Image.asset('assets/logo/ValorexLogo Transparent.png',
+                  child: ClipRect(
+                    child: Image.asset(
+                      'assets/logo/ValorexLogo Transparent.png',
                     ),
-
-                ),
+                  ),
                 ),
               ),
 
               Container(
-                height:50,
+                height: 50,
                 child: const DrawerHeader(
-                  
-                  child:Center(
-                    child: Text('ValoRex',
-                    style: TextStyle(
-
-                      color: Colors.white,
-
-                      fontSize: 30,
-                      fontFamily: 'Valorant2',
-                    ),),
+                  padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'ValoRex',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontFamily: 'Valorant2',
+                      ),
+                    ),
                   ),
-                padding: EdgeInsets.fromLTRB(0,10,0,0),
                 ),
               ),
               // Divider(height:0,thickness: 2,indent:5,endIndent: 5,
               // color: Colors.black,)
-
-
             ],
           ),
         ),
-
-
       ),
     );
-
-
   }
 }
-

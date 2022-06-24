@@ -76,10 +76,10 @@ flutter:
   fonts:
     - family: Valorant2
       fonts:
-        - asset: Fonts/DINNextLTPro-Black.ttf
+        - asset: fonts/DINNextLTPro-Black.ttf
     - family: Valorant1
       fonts:
-        - asset: Fonts/Valorant_Font.ttf
+        - asset: fonts/Valorant_Font.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
