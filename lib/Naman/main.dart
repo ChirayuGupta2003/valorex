@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                 child: Text(
                   "ValoRex",
                   style: TextStyle(
-                    fontFamily: 'Valorant2',
+                    fontFamily: 'Valorant1',
                     fontSize: 35,
                     color: Colors.white,
                   ),
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 30,
-                        fontFamily: 'Valorant2',
+                        fontFamily: 'Valorant1',
                       ),
                     ),
                   ),
