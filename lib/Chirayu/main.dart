@@ -7,6 +7,7 @@ void main() async {
   var body = jsonDecode(response.body);
   for (var i = 0; i < body["data"].length; i++) {
     if (body["data"][i]["isPlayableCharacter"]) {
+      print(body["data"][i]["displayName"]);
       print(i);
     }
   }
