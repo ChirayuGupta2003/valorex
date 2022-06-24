@@ -74,10 +74,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Valorant
+    - family: Valorant2
+      fonts:
+        - asset: Fonts/DINNextLTPro-Black.ttf
+    - family: Valorant1
       fonts:
         - asset: Fonts/Valorant_Font.ttf
 
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

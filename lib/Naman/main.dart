@@ -23,20 +23,22 @@ class _HomePageState extends State<HomePage> {
 
   Widget quoteTemplate(quote){
     return Card(
+      color: Color(0xFFedf2f7),
       margin : EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+
+            Padding(padding: EdgeInsets.all(7)),
             Text(
               quote.text,
-
-
               style: TextStyle(
-                fontFamily:('valorant'),
+                fontFamily:('Valorant2'),
                 fontSize: 25.0,
-                color: Colors.black,
+                color:Color(0xFFcf1b1e,)
+                  // 0xFFcf1b1e
               ),
             ),
             SizedBox (height: 10.0),
@@ -44,7 +46,6 @@ class _HomePageState extends State<HomePage> {
               quote.author,
               style: TextStyle(
                 fontSize: 0.0,
-                color: Colors.black,
               ),
             ),
           ],
@@ -57,33 +58,50 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Color(0xFF0f1923),
         appBar:AppBar(
 
             title: Center(
               child:Container(
-                margin: EdgeInsets.fromLTRB(0,7,0,0),
-                child:Text("Valorex",
+                margin: EdgeInsets.fromLTRB(0,7,10,0),
+                child:Text("ValoRex",
                     style: TextStyle(
-                      fontFamily: ('valorant'),
+
+                      fontFamily: ('Valorant2'),
                       fontSize: 35,
+                      color: Colors.white,
         
 
                     ),
               ) ),
             ),
-            backgroundColor: Colors.blue,
+            backgroundColor: Color(0xFF0f1923),
           ),
 
-        body: Column(
+        body:
+        Column(
           children: quotes.map((quote) => quoteTemplate(quote)).toList(),
         ),
+        drawer: Drawer(
+          
+          backgroundColor: Color(0xFF0f1923),
+          child:Column(
 
-        drawer: Drawer(),
-        floatingActionButton: FloatingActionButton(
-            onPressed: () {},
-            backgroundColor: Colors.black ,
-             child: Icon(Icons.refresh)
-         ),
+            children: [
+              DrawerHeader(child:Text('ValoRex',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40,
+                  fontFamily: 'Valorant2',
+                ),),
+              padding: EdgeInsets.all(20),
+              ),
+
+
+            ],
+          ),
+        ),
+
 
       ),
     );
