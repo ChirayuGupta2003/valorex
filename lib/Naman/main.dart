@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Center(
             child: Container(
-                margin: EdgeInsets.fromLTRB(0, 7, 10, 0),
+                margin: EdgeInsets.fromLTRB(0,10, 10, 0),
                 child: Text(
                   "ValoRex",
                   style: TextStyle(
