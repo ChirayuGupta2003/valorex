@@ -8,6 +8,7 @@ void main() async {
   for (var i = 0; i < body["data"].length; i++) {
     if (body["data"][i]["isPlayableCharacter"]) {
       print(i);
+
     }
   }
 }
