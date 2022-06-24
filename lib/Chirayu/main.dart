@@ -9,6 +9,15 @@ void main() async {
     if (body["data"][i]["isPlayableCharacter"]) {
       print(body["data"][i]["displayName"]);
       print(i);
+      print(i);
+      print(i);
+      print(i);
+      print(i);
+      print(i);
+      print(i);
+      print(i);
+      print(i);
+      print(i);
 
     }
   }
