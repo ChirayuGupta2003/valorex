@@ -21,37 +21,32 @@ class _HomePageState extends State<HomePage> {
     Quote(text: 'AGENTS'),
     Quote(text: 'GUNS'),
     Quote(text: 'MAPS'),
+
   ];
 
   Widget quoteTemplate(quote) {
-    return Expanded(
-      flex: 1,
-      child: Card(
-        color: Color(0xFFedf2f7),
-        margin: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
-        child: Padding(
-          padding: const EdgeInsets.all(5.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Padding(padding: EdgeInsets.all(7)),
-              Center(
-                child: Text(
-                  quote.text,
-                  style: TextStyle(
-                    fontFamily: 'Valorant2',
-                    fontSize: 30.0,
-                    color: Color(
-                      0xFFcf1b1e,
-                    ),
-                    // 0xFFcf1b1e
-                  ),
+    return Card(
+      color: Color(0xFFedf2f7),
+      margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
+      child: Padding(
+        padding: const EdgeInsets.all(5.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Padding(padding: EdgeInsets.all(7)),
+            Text(
+              quote.text,
+              style: TextStyle(
+                fontFamily: 'Valorant2',
+                fontSize: 25.0,
+                color: Color(
+                  0xFFcf1b1e,
                 ),
+                // 0xFFcf1b1e
               ),
-              SizedBox(height: 10.0),
-            ],
-          ),
+            ),
+            SizedBox(height: 10.0),
+          ],
         ),
       ),
     );
@@ -78,7 +73,6 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Color(0xFF0f1923),
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: quotes.map((quote) => quoteTemplate(quote)).toList(),
         ),
         drawer: Drawer(
