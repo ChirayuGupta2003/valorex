@@ -32,7 +32,7 @@ class Maps extends StatelessWidget {
                       color: Colors.white70,
                       fontSize: 50,
                       fontWeight:FontWeight.bold,
-                      fontFamily:'Valorant2'
+                      fontFamily:'Valorant1'
                   ),)
             ),),
           SizedBox(height:20,),
