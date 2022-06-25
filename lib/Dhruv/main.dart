@@ -18,10 +18,8 @@ void main() {
               flex: 6,
               child:
               Container(
-                  height: 500,
-                  width: 300,
+
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
                       borderRadius: BorderRadius.only(bottomLeft:Radius.circular(10),bottomRight: Radius.circular(10)),
                       image: DecorationImage(
                           image:NetworkImage('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0c118364c6320f60/62a289d3891af05acaff06b1/Pearl_Gallery_01.jpg?auto=webp&width=915')
@@ -57,11 +55,11 @@ void main() {
               ),),
             SizedBox(height: 20,),
             Expanded(
-              flex: 6,
+              flex: 10,
               child:
               Container(
-                height: 700,
-                width: 300,
+                width:MediaQuery.of(context).size.width,
+
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   image: DecorationImage(
