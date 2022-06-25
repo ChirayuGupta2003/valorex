@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
     Quote(text: 'AGENTS', image: 'assets/AGENTS.png'),
     Quote(text: 'GUNS', image: 'assets/GUNS.png'),
     Quote(text: 'MAPS', image: 'assets/MAPS.jpg'),
+    
   ];
 
   Widget quoteTemplate(quote) {
