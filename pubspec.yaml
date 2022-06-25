@@ -63,7 +63,7 @@ flutter:
     - assets/logo/ValoRex.png
     - assets/logo/ValorexLogo Transparent.png
     - assets/background/BG1.png
-    - assets/icons
+    - assets/icons/WallPenetration.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
