@@ -21,7 +21,6 @@ class _HomePageState extends State<HomePage> {
     Quote(text: 'AGENTS', image: 'assets/AGENTS.png'),
     Quote(text: 'GUNS', image: 'assets/GUNS.png'),
     Quote(text: 'MAPS', image: 'assets/MAPS.jpg'),
-
   ];
 
   Widget quoteTemplate(quote) {
@@ -53,9 +52,27 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         quote.text,
                         style: TextStyle(
+                          shadows: [
+                            Shadow(
+                                // bottomLeft
+                                offset: Offset(-1.5, -1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // bottomRight
+                                offset: Offset(1.5, -1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // topRight
+                                offset: Offset(1.5, 1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // topLeft
+                                offset: Offset(-1.5, 1.5),
+                                color: Colors.black),
+                          ],
                           fontFamily: 'Valorant1',
                           fontSize: 30.0,
-                         color: Colors.white,
+                          color: Colors.white,
                           // 0xFFcf1b1e
                         ),
                       ),
