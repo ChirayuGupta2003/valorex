@@ -27,7 +27,17 @@ class _HomePageState extends State<HomePage> {
     return Expanded(
       flex: 1,
       child: Card(
-        color: Color(0xFFedf2f7),
+        child: Container(
+        decoration: BoxDecoration( color: Color(0xFFedf2f7),
+        image: DecorationImage(
+        image: AssetImage("assets/background/BG1.png"),
+    fit: BoxFit.cover,
+    alignment: Alignment.center,
+    ),
+    ),
+
+
+        //color: Color(0xFFedf2f7),
         margin: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
         child: Padding(
           padding: const EdgeInsets.all(5.0),
@@ -54,6 +64,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
+    )
     );
   }
 
@@ -65,7 +76,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Center(
             child: Container(
-                margin: EdgeInsets.fromLTRB(0, 10, 10, 0),
+                margin: EdgeInsets.fromLTRB(0, 20, 30, 0),
                 child: Text(
                   "ValoRex",
                   style: TextStyle(
