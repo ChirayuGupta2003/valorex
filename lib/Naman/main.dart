@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
     Quote(text: 'AGENTS', image: 'assets/AGENTS.png'),
     Quote(text: 'GUNS', image: 'assets/GUNS.png'),
     Quote(text: 'MAPS', image: 'assets/MAPS.jpg'),
-    
+
   ];
 
   Widget quoteTemplate(quote) {
@@ -55,9 +55,7 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(
                           fontFamily: 'Valorant1',
                           fontSize: 30.0,
-                          color: Color(
-                            0xFFcf1b1e,
-                          ),
+                         color: Colors.white,
                           // 0xFFcf1b1e
                         ),
                       ),
