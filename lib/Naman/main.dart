@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'quote.dart';
+import 'quote.da'
 
 void main() => runApp(MaterialApp(
       title: "Valorex",
