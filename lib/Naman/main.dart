@@ -114,12 +114,14 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: quotes.map((quote) => quoteTemplate(quote)).toList(),
         ),
+
+        
         drawer: Drawer(
           backgroundColor: Color(0xFF0f1923),
           child: Column(
             children: [
               Container(
-                height: 150,
+                height: 100,
                 padding: EdgeInsets.fromLTRB(0, 20, 20, 0),
                 child: CircleAvatar(
                   radius: 50,
@@ -143,6 +145,173 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.white,
                         fontSize: 30,
                         fontFamily: 'Valorant1',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                  padding: EdgeInsets.fromLTRB(0, 20, 180, 0),
+                  child: Center(
+                    child: Text(
+                      'DEVELOPERS:',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17,
+                        fontFamily: 'Valorant2',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+
+
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                 padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'CHIRAYU GUPTA',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Valorant2',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'DHRUV MARWAHA',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontFamily: 'Valorant2',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'MUKUL JINDAL',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontFamily: 'Valorant2',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'NAMAN BHARGAVA',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontFamily: 'Valorant2',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'NANDIKA CHHUNEJA',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontFamily: 'Valorant2',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'SAMRIDHI WADHWA',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontFamily: 'Valorant2',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+
+
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'VAIBHAV KAPOOR',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontFamily: 'Valorant2',
+
+
                       ),
                     ),
                   ),
