@@ -18,49 +18,83 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Quote> quotes = [
-    Quote(text: 'AGENTS'),
-    Quote(text: 'GUNS'),
-    Quote(text: 'MAPS'),
+    Quote(text: 'AGENTS', image: 'assets/AGENTS.png'),
+    Quote(text: 'GUNS', image: 'assets/GUNS.png'),
+    Quote(text: 'MAPS', image: 'assets/MAPS.jpg'),
   ];
 
   Widget quoteTemplate(quote) {
-    return Card(
-      color: Color(0xFFedf2f7),
-      margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
-      child: Padding(
-        padding: const EdgeInsets.all(5.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Padding(padding: EdgeInsets.all(7)),
-            Text(
-              quote.text,
-              style: TextStyle(
-                fontFamily: 'Valorant2',
-                fontSize: 25.0,
-                color: Color(
-                  0xFFcf1b1e,
+    return Expanded(
+        flex: 1,
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Card(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color(0xFFedf2f7),
+                image: DecorationImage(
+                  image: AssetImage(quote.image),
+                  fit: BoxFit.cover,
+                  alignment: Alignment.center,
                 ),
-                // 0xFFcf1b1e
+              ),
+
+              //color: Color(0xFFedf2f7),
+              //margin: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
+              child: Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Padding(padding: EdgeInsets.all(7)),
+                    Center(
+                      child: Text(
+                        quote.text,
+                        style: TextStyle(
+                          shadows: [
+                            Shadow(
+                                // bottomLeft
+                                offset: Offset(-1.5, -1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // bottomRight
+                                offset: Offset(1.5, -1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // topRight
+                                offset: Offset(1.5, 1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // topLeft
+                                offset: Offset(-1.5, 1.5),
+                                color: Colors.black),
+                          ],
+                          fontFamily: 'Valorant1',
+                          fontSize: 30.0,
+                          color: Colors.white,
+                          // 0xFFcf1b1e
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 10.0),
+                  ],
+                ),
               ),
             ),
-            SizedBox(height: 10.0),
-          ],
-        ),
-      ),
-    );
+          ),
+        ));
   }
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-
       child: Scaffold(
         backgroundColor: Color(0xFF0f1923),
         appBar: AppBar(
           title: Center(
             child: Container(
-                margin: EdgeInsets.fromLTRB(0, 10, 10, 0),
+                margin: EdgeInsets.fromLTRB(0, 20, 30, 0),
                 child: Text(
                   "ValoRex",
                   style: TextStyle(
@@ -73,6 +107,7 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Color(0xFF0f1923),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: quotes.map((quote) => quoteTemplate(quote)).toList(),
         ),
         drawer: Drawer(
