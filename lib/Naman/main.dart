@@ -28,57 +28,61 @@ class _HomePageState extends State<HomePage> {
         flex: 1,
         child: Padding(
           padding: const EdgeInsets.all(10.0),
-          child: Card(
-            child: Container(
-              decoration: BoxDecoration(
-                color: Color(0xFFedf2f7),
-                image: DecorationImage(
-                  image: AssetImage(quote.image),
-                  fit: BoxFit.cover,
-                  alignment: Alignment.center,
+          child:InkWell(
+            onTap: () {
+            },
+            child: Card(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Color(0xFFedf2f7),
+                  image: DecorationImage(
+                    image: AssetImage(quote.image),
+                    fit: BoxFit.cover,
+                    alignment: Alignment.center,
+                  ),
                 ),
-              ),
 
-              //color: Color(0xFFedf2f7),
-              //margin: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
-              child: Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    Padding(padding: EdgeInsets.all(7)),
-                    Center(
-                      child: Text(
-                        quote.text,
-                        style: TextStyle(
-                          shadows: [
-                            Shadow(
-                                // bottomLeft
-                                offset: Offset(-1.5, -1.5),
-                                color: Colors.black),
-                            Shadow(
-                                // bottomRight
-                                offset: Offset(1.5, -1.5),
-                                color: Colors.black),
-                            Shadow(
-                                // topRight
-                                offset: Offset(1.5, 1.5),
-                                color: Colors.black),
-                            Shadow(
-                                // topLeft
-                                offset: Offset(-1.5, 1.5),
-                                color: Colors.black),
-                          ],
-                          fontFamily: 'Valorant1',
-                          fontSize: 30.0,
-                          color: Colors.white,
-                          // 0xFFcf1b1e
+                //color: Color(0xFFedf2f7),
+                //margin: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      Padding(padding: EdgeInsets.all(7)),
+                      Center(
+                        child: Text(
+                          quote.text,
+                          style: TextStyle(
+                            shadows: [
+                              Shadow(
+                                  // bottomLeft
+                                  offset: Offset(-1.5, -1.5),
+                                  color: Colors.black),
+                              Shadow(
+                                  // bottomRight
+                                  offset: Offset(1.5, -1.5),
+                                  color: Colors.black),
+                              Shadow(
+                                  // topRight
+                                  offset: Offset(1.5, 1.5),
+                                  color: Colors.black),
+                              Shadow(
+                                  // topLeft
+                                  offset: Offset(-1.5, 1.5),
+                                  color: Colors.black),
+                            ],
+                            fontFamily: 'Valorant1',
+                            fontSize: 30.0,
+                            color: Colors.white,
+                            // 0xFFcf1b1e
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(height: 10.0),
-                  ],
+                      SizedBox(height: 10.0),
+                    ],
+                  ),
                 ),
               ),
             ),
