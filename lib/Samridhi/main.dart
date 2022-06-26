@@ -32,7 +32,7 @@ class Maps extends StatelessWidget {
                       color: Colors.white70,
                       fontSize: 50,
                       fontWeight:FontWeight.bold,
-                      fontFamily:'Valorant1'
+                      fontFamily:'Valorant2'
                   ),)
             ),),
           SizedBox(height:20,),
@@ -54,19 +54,27 @@ class Maps extends StatelessWidget {
 
                 ),),
             ),),
-          SizedBox(height: 20,),
+          SizedBox(height: 5,),
           Expanded(
             flex: 6,
             child:
             Container(
+              margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 30.0),
+
               height: 700,
               width: 300,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 image: DecorationImage(
+                  fit: BoxFit.fitWidth,
                   image:NetworkImage('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9011a376cfbacccf/62a28a2334f22956975fa6d1/Pearl_Map_Website_641x641.png?auto=webp&width=515'),
                 ),),
-            ),)
+            ),),
+          Container(
+            height: 700,
+            width: 300,
+
+          ),
 
 
         ],),
