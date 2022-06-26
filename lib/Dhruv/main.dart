@@ -18,9 +18,10 @@ void main() {
               flex: 6,
               child:
               Container(
-
+                  height: 500,
+                  width: 300,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(bottomLeft:Radius.circular(10),bottomRight: Radius.circular(10)),
+                      borderRadius: BorderRadius.all(Radius.circular(20)),
                       image: DecorationImage(
                           image:NetworkImage('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0c118364c6320f60/62a289d3891af05acaff06b1/Pearl_Gallery_01.jpg?auto=webp&width=915')
                       )
@@ -55,14 +56,17 @@ void main() {
               ),),
             SizedBox(height: 20,),
             Expanded(
-              flex: 10,
+              flex: 6,
               child:
               Container(
-                width:MediaQuery.of(context).size.width,
-
+                height: 700,
+                width: 300,
                 decoration: BoxDecoration(
+
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   image: DecorationImage(
+                    fit: BoxFit.fitWidth,
+
                     image:NetworkImage('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9011a376cfbacccf/62a28a2334f22956975fa6d1/Pearl_Map_Website_641x641.png?auto=webp&width=515'),
                   ),),
               ),)
