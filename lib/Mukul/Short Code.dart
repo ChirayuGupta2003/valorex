@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'Character_class.dart';
-// import 'Character_Template.dart';
 
 void main() =>
     runApp(MaterialApp(
