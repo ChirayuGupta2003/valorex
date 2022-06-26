@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -13,48 +15,51 @@ class Test extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFF0f1923),
-        body:SingleChildScrollView(
+        body: SingleChildScrollView(
           child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Expanded(
-                  flex: 6,
-                  child: SafeArea(
-                    child: Stack(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(30),
-                              bottomRight: Radius.circular(30),
-                            ),
-                            image: DecorationImage(
-                              fit: BoxFit.fitWidth,
-                              image: NetworkImage(
-                                  'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
-                            ),
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Container(
+                height: 140,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(30),
+                            bottomRight: Radius.circular(30),
                           ),
-                          child: Align(
-                              alignment: Alignment.bottomCenter,
-                              child: Text(
-                                'MAPS',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: Colors.white70,
-                                    fontSize: 50,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'Valorant1'),
-                              )),
+                          image: DecorationImage(
+                            fit: BoxFit.fitWidth,
+                            image: NetworkImage(
+                                'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
+                          ),
                         ),
-                      ],
+                        child: Align(
+                            alignment: Alignment.bottomCenter,
+                            child: Text(
+                              'MAPS',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 50,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Valorant1'),
+                            )),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
-                Expanded(
-                  flex: 6,
-                  child: Stack(
-                    children: [
-                      Container(
+              ),
+              Container(
+                height: 170,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
                           image: DecorationImage(
@@ -68,20 +73,23 @@ class Test extends StatelessWidget {
                               'PEARL',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1'),
                             )),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                Expanded(
-                  flex: 6,
-                  child: Stack(
-                    children: [
-                      Container(
+              ),
+              Container(
+                height: 170,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
                           image: DecorationImage(
@@ -95,20 +103,23 @@ class Test extends StatelessWidget {
                               'FRACTURE',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1'),
                             )),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                Expanded(
-                  flex: 6,
-                  child: Stack(
-                    children: [
-                      Container(
+              ),
+              Container(
+                height: 170,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
                           image: DecorationImage(
@@ -122,20 +133,23 @@ class Test extends StatelessWidget {
                               'BREEZE',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1'),
                             )),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                Expanded(
-                  flex: 6,
-                  child: Stack(
-                    children: [
-                      Container(
+              ),
+              Container(
+                height: 170,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
                           image: DecorationImage(
@@ -149,20 +163,23 @@ class Test extends StatelessWidget {
                               'ICEBOX',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1'),
                             )),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                Expanded(
-                  flex: 6,
-                  child: Stack(
-                    children: [
-                      Container(
+              ),
+              Container(
+                height: 170,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
                           image: DecorationImage(
@@ -176,20 +193,23 @@ class Test extends StatelessWidget {
                               'HEAVEN',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1'),
                             )),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                Expanded(
-                  flex: 6,
-                  child: Stack(
-                    children: [
-                      Container(
+              ),
+              Container(
+                height: 170,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
                           image: DecorationImage(
@@ -203,20 +223,23 @@ class Test extends StatelessWidget {
                               'SPLIT',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1'),
                             )),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                Expanded(
-                  flex: 6,
-                  child: Stack(
-                    children: [
-                      Container(
+              ),
+              Container(
+                height: 170,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                      child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
                           image: DecorationImage(
@@ -230,20 +253,20 @@ class Test extends StatelessWidget {
                               'ASCENT',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontSize: 35,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1'),
                             )),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
+          ),
         ),
-        ),
-
+      ),
     );
   }
 }

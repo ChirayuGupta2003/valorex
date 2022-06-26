@@ -66,6 +66,10 @@ flutter:
     - assets/background/BG1.png
     - assets/icons/WallPenetration.png
     - assets/loadingbanner/Loading Screen Banner.png
+    - assets/AGENTS.png
+    - assets/GUNS.png
+    - assets/MAPS.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
