@@ -18,54 +18,72 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Quote> quotes = [
-    Quote(text: 'AGENTS'),
-    Quote(text: 'GUNS'),
-    Quote(text: 'MAPS'),
+    Quote(text: 'AGENTS', image: 'assets/AGENTS.png'),
+    Quote(text: 'GUNS', image: 'assets/GUNS.png'),
+    Quote(text: 'MAPS', image: 'assets/MAPS.jpg'),
   ];
 
   Widget quoteTemplate(quote) {
     return Expanded(
-      flex: 1,
-      child: Card(
-        child: Container(
-        decoration: BoxDecoration( color: Color(0xFFedf2f7),
-        image: DecorationImage(
-        image: AssetImage("assets/background/BG1.png"),
-    fit: BoxFit.cover,
-    alignment: Alignment.center,
-    ),
-    ),
-
-
-        //color: Color(0xFFedf2f7),
-        margin: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
+        flex: 1,
         child: Padding(
-          padding: const EdgeInsets.all(5.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Padding(padding: EdgeInsets.all(7)),
-              Center(
-                child: Text(
-                  quote.text,
-                  style: TextStyle(
-                    fontFamily: 'Valorant2',
-                    fontSize: 30.0,
-                    color: Color(
-                      0xFFcf1b1e,
-                    ),
-                    // 0xFFcf1b1e
-                  ),
+          padding: const EdgeInsets.all(10.0),
+          child: Card(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color(0xFFedf2f7),
+                image: DecorationImage(
+                  image: AssetImage(quote.image),
+                  fit: BoxFit.cover,
+                  alignment: Alignment.center,
                 ),
               ),
-              SizedBox(height: 10.0),
-            ],
+
+              //color: Color(0xFFedf2f7),
+              //margin: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
+              child: Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Padding(padding: EdgeInsets.all(7)),
+                    Center(
+                      child: Text(
+                        quote.text,
+                        style: TextStyle(
+                          shadows: [
+                            Shadow(
+                                // bottomLeft
+                                offset: Offset(-1.5, -1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // bottomRight
+                                offset: Offset(1.5, -1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // topRight
+                                offset: Offset(1.5, 1.5),
+                                color: Colors.black),
+                            Shadow(
+                                // topLeft
+                                offset: Offset(-1.5, 1.5),
+                                color: Colors.black),
+                          ],
+                          fontFamily: 'Valorant1',
+                          fontSize: 30.0,
+                          color: Colors.white,
+                          // 0xFFcf1b1e
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 10.0),
+                  ],
+                ),
+              ),
+            ),
           ),
-        ),
-      ),
-    )
-    );
+        ));
   }
 
   @override
