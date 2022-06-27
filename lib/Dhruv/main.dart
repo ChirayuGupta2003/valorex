@@ -40,7 +40,7 @@ void main()=>runApp(MaterialApp(
                 child:
                 Container(
                   child:Text(
-                    'Attackers push down into the Defenders on this '
+                        'Attackers push down into the Defenders on this '
                         'two-site map set in a vibrant,underwater city.Pearl is a geo-driven map with no mechanics.'
                         'Take the fight through a compact mid or the'
                         'longer range wings in our first map set in Omega '
