@@ -58,6 +58,9 @@ class Test extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+              child:InkWell(
+                onTap: () {
+                },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
@@ -78,7 +81,7 @@ class Test extends StatelessWidget {
                                 fontFamily: 'Valorant1'),
                           )),
                     ),
-                  ),
+                  ),)
                 ],
               ),
             ),
@@ -88,6 +91,9 @@ class Test extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+              child:InkWell(
+                onTap: () {
+                },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
@@ -108,7 +114,7 @@ class Test extends StatelessWidget {
                                 fontFamily: 'Valorant1'),
                           )),
                     ),
-                  ),
+                  ),)
                 ],
               ),
             ),
@@ -118,6 +124,9 @@ class Test extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+              child:InkWell(
+                onTap: () {
+                },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
@@ -138,7 +147,7 @@ class Test extends StatelessWidget {
                                 fontFamily: 'Valorant1'),
                           )),
                     ),
-                  ),
+                  ),)
                 ],
               ),
             ),
@@ -148,6 +157,9 @@ class Test extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+              child:InkWell(
+                onTap: () {
+                },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
@@ -168,7 +180,7 @@ class Test extends StatelessWidget {
                                 fontFamily: 'Valorant1'),
                           )),
                     ),
-                  ),
+                  ),)
                 ],
               ),
             ),
@@ -178,6 +190,9 @@ class Test extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+              child:InkWell(
+                onTap: () {
+                },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
@@ -198,7 +213,7 @@ class Test extends StatelessWidget {
                                 fontFamily: 'Valorant1'),
                           )),
                     ),
-                  ),
+                  ),)
                 ],
               ),
             ),
@@ -208,6 +223,9 @@ class Test extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+              child:InkWell(
+                onTap: () {
+                },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
@@ -228,7 +246,7 @@ class Test extends StatelessWidget {
                                 fontFamily: 'Valorant1'),
                           )),
                     ),
-                  ),
+                  ),)
                 ],
               ),
             ),
@@ -238,6 +256,9 @@ class Test extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+              child:InkWell(
+                onTap: () {
+                },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
@@ -258,7 +279,7 @@ class Test extends StatelessWidget {
                                 fontFamily: 'Valorant1'),
                           )),
                     ),
-                  ),
+                  ),)
                 ],
               ),
             ),
