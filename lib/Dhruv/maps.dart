@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:valorex/Dhruv/main.dart';
 
 void main() => runApp(MaterialApp(
       home: Test(),
@@ -13,12 +14,21 @@ class Test extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFF0f1923),
-        body: Column(
+        body: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Container(
+                height: 80,
+              ),
+
+              Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Expanded(
               flex: 6,
               child: SafeArea(
+
                 child: Stack(
                   children: [
                     Padding(
@@ -26,8 +36,8 @@ class Test extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(30),
-                            bottomRight: Radius.circular(30),
+                            // bottomLeft: Radius.circular(30),
+                            // bottomRight: Radius.circular(30),
                           ),
                           image: DecorationImage(
                             fit: BoxFit.fitWidth,
@@ -45,13 +55,40 @@ class Test extends StatelessWidget {
                                   fontSize: 50,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1'),
-                            )),
+                            ),
+                                  ),
                       ),
                     ),
-                  ],
-                ),
-              ),
+              Container(
+              height: 170,
+                child: Stack(
+                  children: [
+                    InkWell(
+                      onTap: ()=>Navigator.pushNamed(context,'/agents'),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(24),
+                          image: DecorationImage(
+                              fit: BoxFit.fitWidth,
+                              image: NetworkImage(
+                                  'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0c118364c6320f60/62a289d3891af05acaff06b1/Pearl_Gallery_01.jpg?auto=webp&width=915')),
+                        ),
+                        child: Align(
+                            alignment: Alignment.bottomCenter,
+                            child: Text(
+                              'PEARL',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 35,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Valorant1'),
+                            )),
             ),
+    ),
             Expanded(
               flex: 6,
               child: Stack(
@@ -68,6 +105,7 @@ class Test extends StatelessWidget {
                             fit: BoxFit.fitWidth,
                             image: NetworkImage(
                                 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0c118364c6320f60/62a289d3891af05acaff06b1/Pearl_Gallery_01.jpg?auto=webp&width=915')),
+
                       ),
                       child: Align(
                           alignment: Alignment.bottomCenter,
@@ -118,6 +156,34 @@ class Test extends StatelessWidget {
                 ],
               ),
             ),
+              Container(
+                height: 170,
+                child: Stack(
+                  children: [
+
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(24),
+                          image: DecorationImage(
+                              fit: BoxFit.fitWidth,
+                              image: NetworkImage(
+                                  'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltba64f41bce11904b/607f9e3bc661f15b3da77f85/breeze_1.jpg?auto=webp&width=915')),
+                        ),
+                        child: Align(
+                            alignment: Alignment.bottomCenter,
+                            child: Text(
+                              'BREEZE',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 35,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Valorant1'),
+                            )),
+            ),
+    ),
             Expanded(
               flex: 6,
               child: Stack(
@@ -134,6 +200,7 @@ class Test extends StatelessWidget {
                             fit: BoxFit.fitWidth,
                             image: NetworkImage(
                                 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltba64f41bce11904b/607f9e3bc661f15b3da77f85/breeze_1.jpg?auto=webp&width=915')),
+
                       ),
                       child: Align(
                           alignment: Alignment.bottomCenter,
@@ -286,6 +353,22 @@ class Test extends StatelessWidget {
           ],
         ),
       ),
+    ],
+    ),
+    ),
+
+    ],
+    ),
+    ),
+    )
+    ]
+    )
+    ]
+    )
+    )
+    )
     );
+
+
   }
 }

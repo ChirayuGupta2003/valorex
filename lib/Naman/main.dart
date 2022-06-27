@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'quote.da'
+import 'quote.dart';
 
 void main() => runApp(MaterialApp(
       title: "Valorex",
@@ -18,9 +18,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Quote> quotes = [
-    Quote(text: 'AGENTS', image: 'assets/AGENTS.png'),
-    Quote(text: 'GUNS', image: 'assets/GUNS.png'),
-    Quote(text: 'MAPS', image: 'assets/MAPS.jpg'),
+    Quote(text: 'AGENTS', image: 'assets/AGENTS.png',route:'/agents'),
+    Quote(text: 'GUNS', image: 'assets/GUNS.png',route:'/agents'),
+    Quote(text: 'MAPS', image: 'assets/MAPS.jpg',route: '/mapshomescreen'),
   ];
 
   Widget quoteTemplate(quote) {
@@ -29,8 +29,7 @@ class _HomePageState extends State<HomePage> {
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child:InkWell(
-            onTap: () {
-            },
+            onTap:()=> Navigator.pushNamed(context,quote.route),
             child: Card(
               child: Container(
                 decoration: BoxDecoration(
