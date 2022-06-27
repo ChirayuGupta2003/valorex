@@ -29,6 +29,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_spinkit: ^5.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -79,6 +80,15 @@ flutter:
     - assets/guns/17.png
     - assets/guns/18.png
     - assets/background/BG1.png
+<<<<<<< HEAD
+=======
+    - assets/icons/WallPenetration.png
+    - assets/loadingbanner/Loading Screen Banner.png
+    - assets/AGENTS.png
+    - assets/GUNS.png
+    - assets/MAPS.jpg
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
