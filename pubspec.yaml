@@ -60,10 +60,25 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/logo/ValoRex.png
-    - assets/logo/ValorexLogo Transparent.png
+    - assets/guns/1.png
+    - assets/guns/2.png
+    - assets/guns/3.png
+    - assets/guns/4.webp
+    - assets/guns/5.webp
+    - assets/guns/6.webp
+    - assets/guns/7.webp
+    - assets/guns/8.png
+    - assets/guns/9.png
+    - assets/guns/10.webp
+    - assets/guns/11.png
+    - assets/guns/12.png
+    - assets/guns/13.webp
+    - assets/guns/14.png
+    - assets/guns/15.png
+    - assets/guns/16.png
+    - assets/guns/17.png
+    - assets/guns/18.png
     - assets/background/BG1.png
-    - assets/icons/WallPenetration.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
