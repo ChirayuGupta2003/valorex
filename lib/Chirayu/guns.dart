@@ -14,7 +14,7 @@ void main() async {
   runApp(
     MaterialApp(
       home: GunsScreen(
-        body: body["data"][16],
+        body: body["data"][4],
       ),
     ),
   );
@@ -37,7 +37,7 @@ class _GunsScreenState extends State<GunsScreen> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFF172535),
-        body: Column(
+        body: ListView(
           children: [
             Container(
               height: 130,
