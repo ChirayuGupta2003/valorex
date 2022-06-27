@@ -96,9 +96,9 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
           "GUNS",
 
           style: TextStyle (
-              color: Colors.white,
+            color: Colors.white,
             fontFamily:'Valorant1',
-            fontSize: 50,
+            fontSize: 40,
 
           ),
         ),
@@ -108,52 +108,58 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
 
 
       body: SafeArea(
-        
         child: ListView.builder(
             itemCount: imgList.length,
             itemBuilder:(context,index){
-              return GestureDetector(
+              return  GestureDetector(
                 onTap:(){
 
-           },
-           child: Card(
-             color: Colors.redAccent,
-             child: Row(
-               children: <Widget>[
-                 Container(
-                   width: 100,
-                   height: 100,
-                   child: Image.asset(imgList[index]),
-                 ),
+                },
+                child:InkWell(
+                  onTap:(){
 
-                 Padding(
-                   padding: const EdgeInsets.all(10.0),
-                   child: Column(
+                  },
+                child:Card(
 
-                     crossAxisAlignment: CrossAxisAlignment.start,
 
-                     children: <Widget>[
-                       Text(
-                         titleList[index],
-                         style: TextStyle(
-                           fontSize: 25,
-                           color: Color(0xFF0f1923),
-                           fontWeight: FontWeight.bold,
-                           fontFamily:'Valorant1',
-                         ),
-                       ),
-                       SizedBox(height: 10),
-                       Container(
-                         width: width,
-                         child: Text(
-                           descList[index],
-                           style: TextStyle(
-                             fontSize: 15,
-                             color: Colors.white,
-                             fontFamily:'Valorant1',
-                           ),
-                         ),
-                       )
+                    color: Colors.redAccent,
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 5.0),
+                          margin: EdgeInsets.all(10.0),
+                          width: 110,
+                          height: 100,
+                          child: Image.asset(imgList[index]),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Column(
+
+                            crossAxisAlignment: CrossAxisAlignment.start,
+
+                            children: <Widget>[
+                              Text(
+                                titleList[index],
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  color: Color(0xFF0f1923),
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily:'Valorant1',
+                                ),
+                              ),
+                              SizedBox(height: 10),
+                              Container(
+                                width: width,
+                                child: Text(
+                                  descList[index],
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    color: Colors.white,
+                                    fontFamily:'Valorant1',
+                                  ),
+                                ),
+                              )
 
                             ],
                           ),
@@ -161,9 +167,10 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
                       ],
 
                     )
-                ),
-
+              ),
+                )
               );
+
             }
         ),
       ),
