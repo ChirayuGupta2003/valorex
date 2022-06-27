@@ -135,7 +135,7 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
                           padding: EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 5.0),
                           margin: EdgeInsets.all(10.0),
                           width: 110,
-                          height: 100,
+                          height: 110,
                           child: Image.asset(imgList[index]),
                         ),
                         Padding(
@@ -148,7 +148,7 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
                               Text(
                                 titleList[index],
                                 style: TextStyle(
-                                  fontSize: 25,
+                                  fontSize: 28,
                                   color: Color(0xFF0f1923),
                                   fontWeight: FontWeight.bold,
                                   fontFamily:'Valorant1',
@@ -160,7 +160,7 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
                                 child: Text(
                                   descList[index],
                                   style: TextStyle(
-                                    fontSize: 15,
+                                    fontSize: 18,
                                     color: Colors.white,
                                     fontFamily:'Valorant1',
                                   ),
