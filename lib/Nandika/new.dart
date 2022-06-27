@@ -92,13 +92,19 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
     return Scaffold(
       backgroundColor: Color(0xFF0f1923),
       appBar: AppBar(
-        title:  Text(
-          "GUNS",
+        title:  Center(
+          child:Container(
+            margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+            child: Text(
+              "GUNS",
 
-          style: TextStyle (
-            color: Colors.white,
-            fontFamily:'Valorant1',
-            fontSize: 40,
+              style: TextStyle (
+                color: Colors.white,
+                fontFamily:'Valorant1',
+                fontSize: 40,
+
+              ),
+            ),
 
           ),
         ),
