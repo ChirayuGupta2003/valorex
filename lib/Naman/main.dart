@@ -182,7 +182,7 @@ class _HomePageState extends State<HomePage> {
                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Center(
                     child: Text(
-                      'CHIRAYU GUPTA',
+                      'NANDIKA CHHUNEJA (102116015)',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 13,
@@ -202,7 +202,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Center(
                     child: Text(
-                      'DHRUV MARWAHA',
+                      'CHIRAYU GUPTA (102116046)',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 13,
@@ -221,7 +221,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Center(
                     child: Text(
-                      'MUKUL JINDAL',
+                      'DHRUV MARWAHA (102116049)',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 13,
@@ -241,28 +241,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Center(
                     child: Text(
-                      'NAMAN BHARGAVA',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 13,
-                        fontFamily: 'Valorant2',
-
-
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-
-
-
-              Container(
-                height: 50,
-                child: const DrawerHeader(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                  child: Center(
-                    child: Text(
-                      'NANDIKA CHHUNEJA',
+                      'NAMAN BHARGAVA (102116058)',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 13,
@@ -283,7 +262,28 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Center(
                     child: Text(
-                      'SAMRIDHI WADHWA',
+                      'SAMRIDHI WADHWA (102116060)',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontFamily: 'Valorant2',
+
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+
+
+              Container(
+                height: 50,
+                child: const DrawerHeader(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Center(
+                    child: Text(
+                      'MUKUL JINDAL (102116063)',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 13,
@@ -305,7 +305,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Center(
                     child: Text(
-                      'VAIBHAV KAPOOR',
+                      'VAIBHAV KAPOOR (102116125)',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 13,

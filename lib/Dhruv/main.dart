@@ -4,12 +4,6 @@ void main()=>runApp(MaterialApp(
   home:Test(),
   debugShowCheckedModeBanner: false,
 ));
-    @override
-    Widget build(BuildContext context) {
-      return SafeArea(
-        child: Scaffold(
-          backgroundColor: Color(0xFF0f1923),
-
           body:Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children:<Widget> [
