@@ -45,7 +45,7 @@ dev_dependencies:
 
 flutter_native_splash:
     color: "#0d0d0d"
-    image: assets/logo/ValorexLogo Transparent.png
+    image: assets/splash_screen.png
     android: true
     ios: true
 
@@ -79,6 +79,7 @@ flutter:
     - assets/loadingbanner/
     - assets/logo/
     - assets/characters/
+    - assets/splash_screen.png
 
 
 
