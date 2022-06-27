@@ -3,20 +3,21 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Home(),
+      home: AgentsHome(),
       debugShowCheckedModeBanner: false,
     ));
 
-class Home extends StatefulWidget {
+class AgentsHome extends StatefulWidget {
   @override
-  State<Home> createState() => _HomeState();
+  State<AgentsHome> createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> {
+class _HomeState extends State<AgentsHome> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+
         backgroundColor: Color(0xFF172535),
         body: SingleChildScrollView(
           child: Column(
@@ -78,6 +79,9 @@ class _HomeState extends State<Home> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
+                              InkWell(
+                                onTap: ()=> Navigator.pushNamed(context,'agents' ),
+                              ),
                               Text(
                                 "BRIMSTONE",
                                 style: TextStyle(

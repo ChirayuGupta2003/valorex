@@ -4,18 +4,17 @@ import 'package:flutter/material.dart';
 import 'Character_class.dart';
 
 void main() => runApp(MaterialApp(
-      home: Home(),
       debugShowCheckedModeBanner: false,
     ));
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class AgentsCard extends StatefulWidget {
+  const AgentsCard({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<AgentsCard> createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> {
+class _HomeState extends State<AgentsCard> {
   List<Character> character_info = [
     Character(
         'BRIMSTONE',
@@ -71,7 +70,7 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           InkWell(
-            onTap: () {},
+            onTap:(){},
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(

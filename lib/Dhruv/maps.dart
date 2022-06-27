@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:valorex/Dhruv/main.dart';
 
 void main() => runApp(MaterialApp(
       home: Test(),
@@ -20,7 +21,7 @@ class Test extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                height: 140,
+                height: 80,
                 child: Stack(
                   children: [
                     Padding(
@@ -28,8 +29,8 @@ class Test extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(30),
-                            bottomRight: Radius.circular(30),
+                            // bottomLeft: Radius.circular(30),
+                            // bottomRight: Radius.circular(30),
                           ),
                           image: DecorationImage(
                             fit: BoxFit.fitWidth,
@@ -54,9 +55,13 @@ class Test extends StatelessWidget {
                 ),
               ),
               Container(
+
                 height: 170,
                 child: Stack(
                   children: [
+                    InkWell(
+                      onTap: ()=>Navigator.pushNamed(context,'/agents'),
+                    ),
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: Container(
@@ -117,6 +122,7 @@ class Test extends StatelessWidget {
                 height: 170,
                 child: Stack(
                   children: [
+
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: Container(

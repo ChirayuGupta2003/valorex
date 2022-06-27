@@ -69,6 +69,7 @@ flutter:
     - assets/AGENTS.png
     - assets/GUNS.png
     - assets/MAPS.jpg
+    - assets/loadingbanner/loadingscreen1.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
