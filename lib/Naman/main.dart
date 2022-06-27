@@ -20,7 +20,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<Quote> quotes = [
     Quote(text: 'AGENTS', image: 'assets/AGENTS.png',route:'/agents'),
-    Quote(text: 'GUNS', image: 'assets/GUNS.png',route:'/agents'),
+    Quote(text: 'GUNS', image: 'assets/GUNS.png',route:'/gunshomescreen'),
     Quote(text: 'MAPS', image: 'assets/MAPS.jpg',route: '/mapshomescreen'),
   ];
 
