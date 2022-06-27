@@ -1,6 +1,5 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
+// import 'package:valorex/Dhruv/main.dart';
 
 void main() => runApp(MaterialApp(
       home: Test(),
@@ -15,12 +14,12 @@ class Test extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFF0f1923),
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Container(
-                height: 140,
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Expanded(
+              flex: 6,
+              child: SafeArea(
                 child: Stack(
                   children: [
                     Padding(
@@ -28,9 +27,9 @@ class Test extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(30),
-                            bottomRight: Radius.circular(30),
-                          ),
+                              // bottomLeft: Radius.circular(30),
+                              // bottomRight: Radius.circular(30),
+                              ),
                           image: DecorationImage(
                             fit: BoxFit.fitWidth,
                             image: NetworkImage(
@@ -38,27 +37,31 @@ class Test extends StatelessWidget {
                           ),
                         ),
                         child: Align(
-                            alignment: Alignment.bottomCenter,
-                            child: Text(
-                              'MAPS',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 50,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Valorant1'),
-                            )),
+                          alignment: Alignment.bottomCenter,
+                          child: Text(
+                            'MAPS',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 50,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Valorant1'),
+                          ),
+                        ),
                       ),
                     ),
                   ],
                 ),
               ),
-              Container(
-                height: 170,
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+            ),
+            Expanded(
+              flex: 6,
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                    child: InkWell(
+                      onTap: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
@@ -80,15 +83,18 @@ class Test extends StatelessWidget {
                             )),
                       ),
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
-              Container(
-                height: 170,
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+            ),
+            Expanded(
+              flex: 6,
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                    child: InkWell(
+                      onTap: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
@@ -110,15 +116,18 @@ class Test extends StatelessWidget {
                             )),
                       ),
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
-              Container(
-                height: 170,
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+            ),
+            Expanded(
+              flex: 6,
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                    child: InkWell(
+                      onTap: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
@@ -140,15 +149,18 @@ class Test extends StatelessWidget {
                             )),
                       ),
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
-              Container(
-                height: 170,
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+            ),
+            Expanded(
+              flex: 6,
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                    child: InkWell(
+                      onTap: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
@@ -170,15 +182,18 @@ class Test extends StatelessWidget {
                             )),
                       ),
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
-              Container(
-                height: 170,
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+            ),
+            Expanded(
+              flex: 6,
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                    child: InkWell(
+                      onTap: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
@@ -200,15 +215,18 @@ class Test extends StatelessWidget {
                             )),
                       ),
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
-              Container(
-                height: 170,
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+            ),
+            Expanded(
+              flex: 6,
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                    child: InkWell(
+                      onTap: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
@@ -230,15 +248,18 @@ class Test extends StatelessWidget {
                             )),
                       ),
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
-              Container(
-                height: 170,
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+            ),
+            Expanded(
+              flex: 6,
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                    child: InkWell(
+                      onTap: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
@@ -260,11 +281,11 @@ class Test extends StatelessWidget {
                             )),
                       ),
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

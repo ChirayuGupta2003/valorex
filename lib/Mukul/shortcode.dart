@@ -4,18 +4,17 @@ import 'package:flutter/material.dart';
 import 'Character_class.dart';
 
 void main() => runApp(MaterialApp(
-      home: Home(),
       debugShowCheckedModeBanner: false,
     ));
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class AgentsCard extends StatefulWidget {
+  const AgentsCard({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<AgentsCard> createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> {
+class _HomeState extends State<AgentsCard> {
   List<Character> character_info = [
     Character(
         'BRIMSTONE',
@@ -70,7 +69,26 @@ class _HomeState extends State<Home> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Expanded(
+          InkWell(
+            onTap:(){},
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                      'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(15.0),
+              ),
+              height: 225,
+              width: 175,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Image(
+                    image: NetworkImage(character.url),
+    ),
+              Expanded(
             child: InkWell(
               onTap: () {},
               child: Container(
@@ -150,6 +168,10 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
+    ),
+    )
+    ]
+      )
     );
   }
 

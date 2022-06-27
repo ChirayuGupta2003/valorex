@@ -85,6 +85,8 @@ flutter:
     - assets/AGENTS.png
     - assets/GUNS.png
     - assets/MAPS.jpg
+    - assets/loadingbanner/loadingscreen1.png
+    - assets/logo/ValorexLogo Transparent.png
 
 
 
