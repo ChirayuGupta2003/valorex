@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'weaponClass.dart';
+import 'weaponListCard.dart';
 
 void main() {
   runApp(MyApp());
@@ -69,18 +70,16 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
     // double width = MediaQuery.of(context).size.width * 0.6;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xFF0f1923),
+        backgroundColor: Color(0xFF172535),
         body: SafeArea(
           child: ListView(
             children: <Widget>[
                   Container(
+                    margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
                     height: 130,
-                    width: MediaQuery.of(context).size.width,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage(
-                          "assets/background/background.jpg"
-                        ),
+                        image: AssetImage("assets/background/background.jpg"),
                         fit: BoxFit.cover,
                       ),
                       borderRadius: BorderRadius.only(
@@ -109,65 +108,6 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
                   ), // top appbar
                 ] +
                 arr.map<Widget>((e) => WeaponListCard(index: e)).toList(),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class WeaponListCard extends StatelessWidget {
-  const WeaponListCard({
-    Key? key,
-    required this.index,
-  }) : super(key: key);
-
-  final index;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: InkWell(
-        onTap: () {},
-        child: Card(
-          color: Colors.redAccent,
-          child: Row(
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 5.0),
-                margin: EdgeInsets.all(10.0),
-                width: 110,
-                height: 110,
-                child: Image.asset(index.image),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      index.title,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Color(0xFF0f1923),
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Valorant1',
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Text(
-                      index.description,
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.white,
-                        fontFamily: 'Valorant1',
-                      ),
-                    )
-                  ],
-                ),
-              )
-            ],
           ),
         ),
       ),
