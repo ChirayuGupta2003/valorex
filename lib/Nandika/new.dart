@@ -138,7 +138,7 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
                               Text(
                                 titleList[index],
                                 style: TextStyle(
-                                  fontSize: 27,
+                                  fontSize: 25,
                                   color: Color(0xFF0f1923),
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1',
