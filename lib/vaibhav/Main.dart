@@ -15,5 +15,6 @@ void main() => runApp(MaterialApp(
     '/mapshomescreen': (context)=> Test(),
     '/gunshomescreen': (context)=> ListViewHomePage(),
   },
+  debugShowCheckedModeBanner: false,
 ),
 );
