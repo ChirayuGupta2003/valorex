@@ -38,7 +38,7 @@ class Test extends StatelessWidget {
 
                       style:TextStyle(
                           color: Colors.white,
-                          fontSize: 50,
+                          fontSize: 40,
                           fontWeight:FontWeight.bold,
                           fontFamily: 'Valorant1'
 
@@ -66,7 +66,7 @@ class Test extends StatelessWidget {
                     'possible.',
                 style: TextStyle(
                   color: Colors.white70,
-                  fontSize: 20,
+                  fontSize: 15,
                   letterSpacing:1,
 
 

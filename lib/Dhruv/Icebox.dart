@@ -38,7 +38,7 @@ class Test extends StatelessWidget {
 
                       style:TextStyle(
                           color: Colors.white,
-                          fontSize: 50,
+                          fontSize: 40,
                           fontWeight:FontWeight.bold,
                           fontFamily: 'Valorant1'
 
@@ -61,10 +61,10 @@ class Test extends StatelessWidget {
                     'excavation site overtaken by the arctic. The two '
                     'plant sites protected by snow and metal require '
                     'some horizontal finesse. Take advantages of the '
-                    'ziplines and they’ll see you coming',
+                    'ziplines and they’ll see you coming.',
                 style: TextStyle(
                   color: Colors.white70,
-                  fontSize: 20,
+                  fontSize: 17,
                   letterSpacing:1,
 
 

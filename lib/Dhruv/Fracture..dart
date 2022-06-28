@@ -39,7 +39,7 @@ class Test extends StatelessWidget {
 
                       style:TextStyle(
                           color: Colors.white,
-                          fontSize: 50,
+                          fontSize: 40,
                           fontWeight:FontWeight.bold,
                           fontFamily: 'Valorant1'
 
@@ -65,7 +65,7 @@ class Test extends StatelessWidget {
                     'hatches to weather the assault.',
                 style: TextStyle(
                   color: Colors.white70,
-                  fontSize: 20,
+                  fontSize: 17,
                   letterSpacing:1,
 
 

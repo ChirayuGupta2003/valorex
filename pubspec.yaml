@@ -101,6 +101,11 @@ flutter:
     - family: Valorant1
       fonts:
         - asset: fonts/Valorant_Font.ttf
-
+    - family: Valorant3
+      fonts:
+        - asset: fonts/DINNextLTPro-Regular.ttf
+    - family: Valorant5
+      fonts:
+        - asset: fonts/DINNextLTPro-Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
