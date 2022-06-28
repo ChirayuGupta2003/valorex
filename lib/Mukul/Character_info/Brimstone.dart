@@ -21,19 +21,20 @@ class _characterState extends State<Brimstone> {
       child: Scaffold(
         backgroundColor: Color(0xFF0f1923),
         appBar: AppBar(
-          leading: FlatButton(
-              onPressed: () {},
-              child: Icon(
-                Icons.arrow_back_sharp,
+          title: Column(
+
+            children:[
+              Padding(padding: EdgeInsets.fromLTRB(0,10,0,0)),
+              Text(
+              "Brimstone",
+              style: TextStyle(
+                fontFamily: 'Valorant1',
+                fontSize: 35,
                 color: Colors.white,
-              )),
-          title: Text(
-            "PHOENIX",
-            style: TextStyle(
-              fontFamily: 'Valorant1',
-              fontSize: 35,
-              color: Colors.white,
+              ),
+
             ),
+          ]
           ),
           centerTitle: true,
           backgroundColor: Color(0xFF0f1923),
@@ -41,7 +42,9 @@ class _characterState extends State<Brimstone> {
         body: SingleChildScrollView(
           child: Column(children: [
             Container(
+              margin: EdgeInsets.all(7),
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
                   image: DecorationImage(
                 image: NetworkImage(
                     'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
@@ -55,17 +58,35 @@ class _characterState extends State<Brimstone> {
               ),
               height: 375,
             ),
+            SizedBox(height: 5 ),
             Container(
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Text(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(7),
+                color: Colors.black54,
+              ),
+              padding: EdgeInsets.all(7),
+              margin: EdgeInsets.all(7),
+              child: Column(
+                crossAxisAlignment:CrossAxisAlignment.center ,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children:[
+                  // Padding(padding:EdgeInsets.all(10.0)),
+                  Center(
+                  child:Text(
                   "Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
                   overflow: TextOverflow.visible,
                   style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: "Valorant3",
+                    fontWeight: FontWeight.bold,
                     color: Colors.white,
+
                   ),
                 ),
+                  ),
+      ]
               ),
+
             ),
             Column(
               children: [
@@ -76,30 +97,54 @@ class _characterState extends State<Brimstone> {
                       children: [
                         Flexible(
                           child: Container(
+                            padding: EdgeInsets.all(10),
+
+
+
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent,
+                              shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(10),
+
+
+                            ),
+                            margin: EdgeInsets.all(5) ,
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
+                              matchTextDirection: true,
+
                               image: NetworkImage(
                                   "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/grenade/displayicon.png"),
                               fit: BoxFit.cover,
+
                             ),
                           ),
                         ),
                         Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                          color: Colors.black54,
+                          ),
+                          padding: EdgeInsets.all(7),
+                          margin: EdgeInsets.all(7),
                           width: (MediaQuery.of(context).size.width) * (2 / 3),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Stim Beacon',
+                              Text('STIM BEACON',
                                   style: TextStyle(
+                                    fontFamily: 'Valorant2',
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                                    fontSize: 18,
                                   )),
                               Text(
                                 'INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players RapidFire and a speed boost.',
                                 style: TextStyle(
+                                  fontFamily: 'Valorant3',
                                   color: Colors.white,
-                                  fontSize: 12,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
                                 ),
                                 overflow: TextOverflow.visible,
                               ),
@@ -121,30 +166,51 @@ class _characterState extends State<Brimstone> {
                       children: [
                         Flexible(
                           child: Container(
+                            padding: EdgeInsets.all(10),
+
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent,
+                              shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(10),
+
+
+                            ),
+                            margin: EdgeInsets.all(5) ,
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
                                   "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability1/displayicon.png"),
                               fit: BoxFit.cover,
+                              matchTextDirection: true,
                             ),
                           ),
                         ),
                         Container(
+
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.black54,
+                          ),
+                          padding: EdgeInsets.all(7),
+                          margin: EdgeInsets.all(7),
                           width: (MediaQuery.of(context).size.width) * (2 / 3),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Incendiary ',
+                              Text('INCENDIARY ',
                                   style: TextStyle(
+                                    fontFamily: 'Valorant2',
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                                    fontSize: 18,
                                   )),
                               Text(
                                 'EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.',
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 12,
+                                  fontSize: 13,
+                                  fontFamily: 'Valorant3',
+                                  fontWeight: FontWeight.bold,
                                 ),
                                 overflow: TextOverflow.visible,
                               ),
@@ -166,30 +232,51 @@ class _characterState extends State<Brimstone> {
                       children: [
                         Flexible(
                           child: Container(
+                            padding: EdgeInsets.all(10),
+
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent,
+                              shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(10),
+
+
+                            ),
+                            margin: EdgeInsets.all(5) ,
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
                                   "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability2/displayicon.png"),
                               fit: BoxFit.cover,
+                              matchTextDirection: true,
                             ),
                           ),
                         ),
                         Container(
+
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.black54,
+                          ),
+                          padding: EdgeInsets.all(7),
+                          margin: EdgeInsets.all(7),
                           width: (MediaQuery.of(context).size.width) * (2 / 3),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Sky Smoke',
+                              Text('SKY SMOKE',
                                   style: TextStyle(
+                                    fontFamily: 'Valorant2',
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                                    fontSize: 18,
                                   )),
                               Text(
                                 'EQUIP a tactical map. FIRE to set locations where Brimstone\'s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.',
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 12,
+                                  fontSize: 13,
+                                  fontFamily: 'Valorant3',
+                                  fontWeight: FontWeight.bold,
                                 ),
                                 overflow: TextOverflow.visible,
                               ),
@@ -211,6 +298,16 @@ class _characterState extends State<Brimstone> {
                       children: [
                         Flexible(
                           child: Container(
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent,
+                              shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(10),
+
+
+                            ),
+                            margin: EdgeInsets.all(5) ,
+
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
@@ -220,21 +317,30 @@ class _characterState extends State<Brimstone> {
                           ),
                         ),
                         Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.black54,
+                          ),
+                          padding: EdgeInsets.all(7),
+                          margin: EdgeInsets.all(7),
                           width: (MediaQuery.of(context).size.width) * (2 / 3),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Orbital Strike',
+                              Text('ORBITAL STRIKE',
                                   style: TextStyle(
+                                    fontFamily: 'Valorant2',
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                                    fontSize: 18,
                                   )),
                               Text(
                                 'EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.',
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 12,
+                                  fontSize: 13,
+                                  fontFamily: 'Valorant3',
+                                  fontWeight: FontWeight.bold,
                                 ),
                                 overflow: TextOverflow.visible,
                               ),
