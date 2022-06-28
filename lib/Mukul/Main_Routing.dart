@@ -23,6 +23,8 @@ import 'package:valorex/Mukul/Character_info/Kayo.dart';
 import 'package:valorex/Mukul/Character_info/Chamber.dart';
 import 'package:valorex/Mukul/Character_info/Neon.dart';
 import 'package:valorex/Mukul/Character_info/Fade.dart';
+import 'package:valorex/Mukul/Character_info/Fade.dart';
+
 
 void main() => runApp(MaterialApp(
   initialRoute: '/loadingscreen',
