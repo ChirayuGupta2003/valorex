@@ -28,7 +28,7 @@ class _characterState extends State<Brimstone> {
                 color: Colors.white,
               )),
           title: Text(
-            "PHOENIX",
+            "BRIMSTONE",
             style: TextStyle(
               fontFamily: 'Valorant1',
               fontSize: 35,

@@ -107,7 +107,7 @@ class _HomeState extends State<Agents> {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap:()=> Navigator.pushNamed(context,'/${character.name1}'),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
