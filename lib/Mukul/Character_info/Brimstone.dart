@@ -21,21 +21,17 @@ class _characterState extends State<Brimstone> {
       child: Scaffold(
         backgroundColor: Color(0xFF0f1923),
         appBar: AppBar(
-          title: Column(
-
-            children:[
-              Padding(padding: EdgeInsets.fromLTRB(0,10,0,0)),
-              Text(
+          title: Column(children: [
+            Padding(padding: EdgeInsets.fromLTRB(0, 10, 0, 0)),
+            Text(
               "Brimstone",
               style: TextStyle(
                 fontFamily: 'Valorant1',
                 fontSize: 35,
                 color: Colors.white,
               ),
-
             ),
-          ]
-          ),
+          ]),
           centerTitle: true,
           backgroundColor: Color(0xFF0f1923),
         ),
@@ -44,12 +40,12 @@ class _characterState extends State<Brimstone> {
             Container(
               margin: EdgeInsets.all(7),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(30),
                   image: DecorationImage(
-                image: NetworkImage(
-                    'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
-                fit: BoxFit.cover,
-              )),
+                    image: NetworkImage(
+                        'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
+                    fit: BoxFit.cover,
+                  )),
               width: MediaQuery.of(context).size.width,
               child: Image(
                 image: NetworkImage(
@@ -58,7 +54,7 @@ class _characterState extends State<Brimstone> {
               ),
               height: 375,
             ),
-            SizedBox(height: 5 ),
+            SizedBox(height: 5),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
@@ -67,26 +63,23 @@ class _characterState extends State<Brimstone> {
               padding: EdgeInsets.all(7),
               margin: EdgeInsets.all(7),
               child: Column(
-                crossAxisAlignment:CrossAxisAlignment.center ,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children:[
-                  // Padding(padding:EdgeInsets.all(10.0)),
-                  Center(
-                  child:Text(
-                  "Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
-                  overflow: TextOverflow.visible,
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontFamily: "Valorant3",
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-
-                  ),
-                ),
-                  ),
-      ]
-              ),
-
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // Padding(padding:EdgeInsets.all(10.0)),
+                    Center(
+                      child: Text(
+                        "Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
+                        overflow: TextOverflow.visible,
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontFamily: "Valorant3",
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ]),
             ),
             Column(
               children: [
@@ -98,32 +91,25 @@ class _characterState extends State<Brimstone> {
                         Flexible(
                           child: Container(
                             padding: EdgeInsets.all(10),
-
-
-
                             decoration: BoxDecoration(
                               color: Colors.redAccent,
                               shape: BoxShape.rectangle,
                               borderRadius: BorderRadius.circular(10),
-
-
                             ),
-                            margin: EdgeInsets.all(5) ,
+                            margin: EdgeInsets.all(5),
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               matchTextDirection: true,
-
                               image: NetworkImage(
                                   "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/grenade/displayicon.png"),
                               fit: BoxFit.cover,
-
                             ),
                           ),
                         ),
                         Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                          color: Colors.black54,
+                            color: Colors.black54,
                           ),
                           padding: EdgeInsets.all(7),
                           margin: EdgeInsets.all(7),
@@ -167,15 +153,12 @@ class _characterState extends State<Brimstone> {
                         Flexible(
                           child: Container(
                             padding: EdgeInsets.all(10),
-
                             decoration: BoxDecoration(
                               color: Colors.redAccent,
                               shape: BoxShape.rectangle,
                               borderRadius: BorderRadius.circular(10),
-
-
                             ),
-                            margin: EdgeInsets.all(5) ,
+                            margin: EdgeInsets.all(5),
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
@@ -186,7 +169,6 @@ class _characterState extends State<Brimstone> {
                           ),
                         ),
                         Container(
-
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.black54,
@@ -233,15 +215,12 @@ class _characterState extends State<Brimstone> {
                         Flexible(
                           child: Container(
                             padding: EdgeInsets.all(10),
-
                             decoration: BoxDecoration(
                               color: Colors.redAccent,
                               shape: BoxShape.rectangle,
                               borderRadius: BorderRadius.circular(10),
-
-
                             ),
-                            margin: EdgeInsets.all(5) ,
+                            margin: EdgeInsets.all(5),
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
@@ -252,7 +231,6 @@ class _characterState extends State<Brimstone> {
                           ),
                         ),
                         Container(
-
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.black54,
@@ -303,11 +281,8 @@ class _characterState extends State<Brimstone> {
                               color: Colors.redAccent,
                               shape: BoxShape.rectangle,
                               borderRadius: BorderRadius.circular(10),
-
-
                             ),
-                            margin: EdgeInsets.all(5) ,
-
+                            margin: EdgeInsets.all(5),
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(

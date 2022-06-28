@@ -156,13 +156,6 @@ class _HomeState extends State<Agents> {
         child: Column(
           children: [
             AppBar(
-              leading: FlatButton(
-                onPressed: () {},
-                child: Icon(
-                  Icons.arrow_back_sharp,
-                  color: Colors.white,
-                ),
-              ),
               title: Text(
                 "AGENTS",
                 style: TextStyle(
