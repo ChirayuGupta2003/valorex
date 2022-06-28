@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Center(
             child: Container(
-                margin: EdgeInsets.fromLTRB(0, 20, 30, 0),
+                margin: EdgeInsets.fromLTRB(0, 10, 30, 0),
                 child: Text(
                   "ValoRex",
                   style: TextStyle(
@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
           children: quotes.map((quote) => quoteTemplate(quote)).toList(),
         ),
 
-        
+
         drawer: Drawer(
           backgroundColor: Color(0xFF0f1923),
           child: Column(

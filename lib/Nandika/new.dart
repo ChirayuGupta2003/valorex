@@ -97,13 +97,13 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
         appBar: AppBar(
           title: Center(
             child: Container(
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+              margin: EdgeInsets.fromLTRB(0, 10, 30, 0),
               child: Text(
                 "GUNS",
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'Valorant1',
-                  fontSize: 40,
+                  fontSize: 35,
                 ),
               ),
             ),
@@ -138,7 +138,7 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
                               Text(
                                 titleList[index],
                                 style: TextStyle(
-                                  fontSize: 25,
+                                  fontSize: 27,
                                   color: Color(0xFF0f1923),
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Valorant1',
