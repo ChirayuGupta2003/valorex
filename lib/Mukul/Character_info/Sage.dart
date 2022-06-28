@@ -3,18 +3,18 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Phoenix(),
-      debugShowCheckedModeBanner: false,
-    ));
+  home: Sage(),
+  debugShowCheckedModeBanner: false,
+));
 
-class Phoenix extends StatefulWidget {
-  const Phoenix({Key? key}) : super(key: key);
+class Sage extends StatefulWidget {
+  const Sage({Key? key}) : super(key: key);
 
   @override
-  State<Phoenix> createState() => _characterState();
+  State<Sage> createState() => _characterState();
 }
 
-class _characterState extends State<Phoenix> {
+class _characterState extends State<Sage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -24,7 +24,7 @@ class _characterState extends State<Phoenix> {
           title: Column(children: [
             Padding(padding: EdgeInsets.fromLTRB(0, 10, 0, 0)),
             Text(
-              "PHOENIX",
+              "SAGE",
               style: TextStyle(
                 fontFamily: 'Valorant1',
                 fontSize: 35,
@@ -49,7 +49,7 @@ class _characterState extends State<Phoenix> {
               width: MediaQuery.of(context).size.width,
               child: Image(
                 image: NetworkImage(
-                    "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf0200e1821b5b39f/5eb7cdc144bf8261a04d87f9/V_AGENTS_587x900_Phx.png"),
+                    "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8a627ec10b57f4f2/5eb7cdc16509f3370a5a93b7/V_AGENTS_587x900_sage.png"),
                 fit: BoxFit.scaleDown,
               ),
               height: 375,
@@ -69,7 +69,7 @@ class _characterState extends State<Phoenix> {
                     // Padding(padding:EdgeInsets.all(10.0)),
                     Center(
                       child: Text(
-                        "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he's rushing in to fight on his own terms.",
+                        "The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off forceful assaults, she provides a calm center to a hellish battlefield.",
                         overflow: TextOverflow.visible,
                         style: TextStyle(
                           fontSize: 15,
@@ -101,7 +101,7 @@ class _characterState extends State<Phoenix> {
                             child: Image(
                               matchTextDirection: true,
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/grenade/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability1/displayicon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -117,7 +117,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('BLAZE',
+                              Text('SLOW ORB',
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -125,7 +125,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.',
+                                'EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, creating a lingering field that slows players caught inside of it.',
                                 style: TextStyle(
                                   fontFamily: 'Valorant3',
                                   color: Colors.white,
@@ -162,7 +162,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability1/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability2/displayicon.png"),
                               fit: BoxFit.cover,
                               matchTextDirection: true,
                             ),
@@ -179,7 +179,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('CURVEBALL ',
+                              Text('HEALING ORB',
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -187,7 +187,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.',
+                                'EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a heal-over-time on them. ALT FIRE while Sage is damaged to activate a self heal-over-time.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
@@ -224,7 +224,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability2/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/grenade/displayicon.png"),
                               fit: BoxFit.cover,
                               matchTextDirection: true,
                             ),
@@ -241,7 +241,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('HOT HANDS',
+                              Text('BARRIER ORB',
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -249,7 +249,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.',
+                                'EQUIP a barrier orb. FIRE places a wall that fortifies after a few seconds. ALT FIRE rotates the targeter.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
@@ -286,7 +286,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ultimate/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ultimate/displayicon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -302,7 +302,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('RUN IT BACK',
+                              Text('RESURRECTION',
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -310,7 +310,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'INSTANTLY place a marker at Phoenix\'s location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.',
+                                'EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,

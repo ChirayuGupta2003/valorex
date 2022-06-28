@@ -184,7 +184,7 @@ class _HomeState extends State<Agents> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap:()=> Navigator.pushNamed(context,'/FADE'),
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(

@@ -3,18 +3,18 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Phoenix(),
-      debugShowCheckedModeBanner: false,
-    ));
+  home: Yoru(),
+  debugShowCheckedModeBanner: false,
+));
 
-class Phoenix extends StatefulWidget {
-  const Phoenix({Key? key}) : super(key: key);
+class Yoru extends StatefulWidget {
+  const Yoru({Key? key}) : super(key: key);
 
   @override
-  State<Phoenix> createState() => _characterState();
+  State<Yoru> createState() => _characterState();
 }
 
-class _characterState extends State<Phoenix> {
+class _characterState extends State<Yoru> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -24,7 +24,7 @@ class _characterState extends State<Phoenix> {
           title: Column(children: [
             Padding(padding: EdgeInsets.fromLTRB(0, 10, 0, 0)),
             Text(
-              "PHOENIX",
+              "YORU",
               style: TextStyle(
                 fontFamily: 'Valorant1',
                 fontSize: 35,
@@ -49,7 +49,7 @@ class _characterState extends State<Phoenix> {
               width: MediaQuery.of(context).size.width,
               child: Image(
                 image: NetworkImage(
-                    "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf0200e1821b5b39f/5eb7cdc144bf8261a04d87f9/V_AGENTS_587x900_Phx.png"),
+                    "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd4080f8efb365751/5ff5660bb47cdf7fc7d6c3dc/V_AGENTS_587x900_yoru.png"),
                 fit: BoxFit.scaleDown,
               ),
               height: 375,
@@ -69,7 +69,7 @@ class _characterState extends State<Phoenix> {
                     // Padding(padding:EdgeInsets.all(10.0)),
                     Center(
                       child: Text(
-                        "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he's rushing in to fight on his own terms.",
+                        "Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.",
                         overflow: TextOverflow.visible,
                         style: TextStyle(
                           fontSize: 15,
@@ -101,7 +101,7 @@ class _characterState extends State<Phoenix> {
                             child: Image(
                               matchTextDirection: true,
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/grenade/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/grenade/displayicon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -117,7 +117,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('BLAZE',
+                              Text('FAKEOUT'.toUpperCase(),
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -125,7 +125,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.',
+                                'EQUIP an echo that transforms into a mirror image of Yoru when activated FIRE to instantly activate the mirror image and send it forward ALT FIRE to place an inactive echo USE to transform an inactive echo into a mirror image and send it forward.  Mirror images explode in a blinding flash when destroyed by enemies.',
                                 style: TextStyle(
                                   fontFamily: 'Valorant3',
                                   color: Colors.white,
@@ -162,7 +162,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability1/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability1/displayicon.png"),
                               fit: BoxFit.cover,
                               matchTextDirection: true,
                             ),
@@ -179,7 +179,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('CURVEBALL ',
+                              Text('BLINDSIDE'.toUpperCase(),
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -187,7 +187,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.',
+                                'EQUIP to rip an unstable dimensional fragment from reality. FIRE to throw the fragment, activating a flash that winds up once it collides with a hard surface in world.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
@@ -224,7 +224,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability2/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability2/displayicon.png"),
                               fit: BoxFit.cover,
                               matchTextDirection: true,
                             ),
@@ -241,7 +241,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('HOT HANDS',
+                              Text('GATECRASH'.toUpperCase(),
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -249,7 +249,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.',
+                                'EQUIP a rift tether FIRE to send the tether forward ALT FIRE to place a stationary tether ACTIVATE to teleport to the tether\'s location USE to trigger a fake teleport',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
@@ -286,7 +286,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ultimate/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ultimate/displayicon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -302,7 +302,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('RUN IT BACK',
+                              Text('DIMENSIONAL DRIFT'.toUpperCase(),
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -310,7 +310,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'INSTANTLY place a marker at Phoenix\'s location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.',
+                                'EQUIP a mask that can see between dimensions FIRE to drift into Yoru\'s dimension, unable to be affected or seen by enemies from the outside.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
