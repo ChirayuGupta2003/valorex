@@ -3,18 +3,18 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Phoenix(),
-      debugShowCheckedModeBanner: false,
-    ));
+  home: Breach(),
+  debugShowCheckedModeBanner: false,
+));
 
-class Phoenix extends StatefulWidget {
-  const Phoenix({Key? key}) : super(key: key);
+class Breach extends StatefulWidget {
+  const Breach({Key? key}) : super(key: key);
 
   @override
-  State<Phoenix> createState() => _characterState();
+  State<Breach> createState() => _characterState();
 }
 
-class _characterState extends State<Phoenix> {
+class _characterState extends State<Breach> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -24,7 +24,7 @@ class _characterState extends State<Phoenix> {
           title: Column(children: [
             Padding(padding: EdgeInsets.fromLTRB(0, 10, 0, 0)),
             Text(
-              "PHOENIX",
+              "BREACH",
               style: TextStyle(
                 fontFamily: 'Valorant1',
                 fontSize: 35,
@@ -49,7 +49,7 @@ class _characterState extends State<Phoenix> {
               width: MediaQuery.of(context).size.width,
               child: Image(
                 image: NetworkImage(
-                    "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf0200e1821b5b39f/5eb7cdc144bf8261a04d87f9/V_AGENTS_587x900_Phx.png"),
+                    "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt100d13bfa8286a3d/5eb7cdc11ea0c32e33b95fa2/V_AGENTS_587x900_Breach.png"),
                 fit: BoxFit.scaleDown,
               ),
               height: 375,
@@ -69,7 +69,7 @@ class _characterState extends State<Phoenix> {
                     // Padding(padding:EdgeInsets.all(10.0)),
                     Center(
                       child: Text(
-                        "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he's rushing in to fight on his own terms.",
+                        "The bionic Swede Breach fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.",
                         overflow: TextOverflow.visible,
                         style: TextStyle(
                           fontSize: 15,
@@ -101,7 +101,7 @@ class _characterState extends State<Phoenix> {
                             child: Image(
                               matchTextDirection: true,
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/grenade/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability1/displayicon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -117,7 +117,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('BLAZE',
+                              Text('Flashpoint'.toUpperCase(),
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -125,7 +125,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.',
+                                'EQUIP a blinding charge. FIRE the charge to set a fast-acting burst through the wall. The charge detonates to blind all players looking at it.',
                                 style: TextStyle(
                                   fontFamily: 'Valorant3',
                                   color: Colors.white,
@@ -162,7 +162,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability1/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability2/displayicon.png"),
                               fit: BoxFit.cover,
                               matchTextDirection: true,
                             ),
@@ -179,7 +179,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('CURVEBALL ',
+                              Text('Fault Line'.toUpperCase(),
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -187,7 +187,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.',
+                                'EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
@@ -224,7 +224,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability2/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png"),
                               fit: BoxFit.cover,
                               matchTextDirection: true,
                             ),
@@ -241,7 +241,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('HOT HANDS',
+                              Text('Aftershock'.toUpperCase(),
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -249,7 +249,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.',
+                                'EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
@@ -286,7 +286,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ultimate/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ultimate/displayicon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -302,7 +302,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('RUN IT BACK',
+                              Text('Rolling Thunder'.toUpperCase(),
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -310,7 +310,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'INSTANTLY place a marker at Phoenix\'s location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.',
+                                'EQUIP a Seismic Charge. FIRE to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,

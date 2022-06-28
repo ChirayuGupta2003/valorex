@@ -3,18 +3,18 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Phoenix(),
-      debugShowCheckedModeBanner: false,
-    ));
+  home: Viper(),
+  debugShowCheckedModeBanner: false,
+));
 
-class Phoenix extends StatefulWidget {
-  const Phoenix({Key? key}) : super(key: key);
+class Viper extends StatefulWidget {
+  const Viper({Key? key}) : super(key: key);
 
   @override
-  State<Phoenix> createState() => _characterState();
+  State<Viper> createState() => _characterState();
 }
 
-class _characterState extends State<Phoenix> {
+class _characterState extends State<Viper> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -24,7 +24,7 @@ class _characterState extends State<Phoenix> {
           title: Column(children: [
             Padding(padding: EdgeInsets.fromLTRB(0, 10, 0, 0)),
             Text(
-              "PHOENIX",
+              "VIPER",
               style: TextStyle(
                 fontFamily: 'Valorant1',
                 fontSize: 35,
@@ -49,7 +49,7 @@ class _characterState extends State<Phoenix> {
               width: MediaQuery.of(context).size.width,
               child: Image(
                 image: NetworkImage(
-                    "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf0200e1821b5b39f/5eb7cdc144bf8261a04d87f9/V_AGENTS_587x900_Phx.png"),
+                    "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc825c6589eda7717/5eb7cdc6ee88132a6f6cfc25/V_AGENTS_587x900_Viper.png"),
                 fit: BoxFit.scaleDown,
               ),
               height: 375,
@@ -69,7 +69,7 @@ class _characterState extends State<Phoenix> {
                     // Padding(padding:EdgeInsets.all(10.0)),
                     Center(
                       child: Text(
-                        "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he's rushing in to fight on his own terms.",
+                        "The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.",
                         overflow: TextOverflow.visible,
                         style: TextStyle(
                           fontSize: 15,
@@ -101,7 +101,7 @@ class _characterState extends State<Phoenix> {
                             child: Image(
                               matchTextDirection: true,
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/grenade/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability1/displayicon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -117,7 +117,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('BLAZE',
+                              Text('POISON CLOUD',
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -125,7 +125,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.',
+                                'EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. RE-USE the ability to create a toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED.',
                                 style: TextStyle(
                                   fontFamily: 'Valorant3',
                                   color: Colors.white,
@@ -162,7 +162,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability1/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability2/displayicon.png"),
                               fit: BoxFit.cover,
                               matchTextDirection: true,
                             ),
@@ -179,7 +179,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('CURVEBALL ',
+                              Text('TOXIC SCREEN',
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -187,7 +187,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.',
+                                'EQUIP a gas emitter launcher that penetrates terrain. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
@@ -224,7 +224,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability2/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/grenade/displayicon.png"),
                               fit: BoxFit.cover,
                               matchTextDirection: true,
                             ),
@@ -241,7 +241,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('HOT HANDS',
+                              Text('SNAKE BITE',
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -249,7 +249,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.',
+                                'EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and applies Vulnerable.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
@@ -286,7 +286,7 @@ class _characterState extends State<Phoenix> {
                             width: (MediaQuery.of(context).size.width / 3),
                             child: Image(
                               image: NetworkImage(
-                                  "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ultimate/displayicon.png"),
+                                  "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ultimate/displayicon.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -302,7 +302,7 @@ class _characterState extends State<Phoenix> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('RUN IT BACK',
+                              Text('VIPER\'S PIT',
                                   style: TextStyle(
                                     fontFamily: 'Valorant2',
                                     color: Colors.white,
@@ -310,7 +310,7 @@ class _characterState extends State<Phoenix> {
                                     fontSize: 18,
                                   )),
                               Text(
-                                'INSTANTLY place a marker at Phoenix\'s location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.',
+                                'EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range of players and maximum health of enemies inside of it. HOLD the ability key to disperse the cloud early.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 13,
