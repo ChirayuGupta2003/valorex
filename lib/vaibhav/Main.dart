@@ -25,24 +25,23 @@ void main() async {
         '/PHOENIX': (context) => Phoenix(),
         '/mapshomescreen': (context) => Test(),
         '/gunshomescreen': (context) => ListViewHomePage(),
-        '/guns-0': (context) => GunsScreen(body: body['data'][0]),
-        '/guns-1': (context) => GunsScreen(body: body['data'][1]),
-        '/guns-2': (context) => GunsScreen(body: body['data'][2]),
-        '/guns-3': (context) => GunsScreen(body: body['data'][3]),
-        '/guns-4': (context) => GunsScreen(body: body['data'][4]),
-        '/guns-5': (context) => GunsScreen(body: body['data'][5]),
-        '/guns-6': (context) => GunsScreen(body: body['data'][6]),
-        '/guns-7': (context) => GunsScreen(body: body['data'][7]),
-        '/guns-8': (context) => GunsScreen(body: body['data'][8]),
-        '/guns-9': (context) => GunsScreen(body: body['data'][9]),
-        '/guns-10': (context) => GunsScreen(body: body['data'][10]),
-        '/guns-11': (context) => GunsScreen(body: body['data'][11]),
-        '/guns-12': (context) => GunsScreen(body: body['data'][12]),
-        '/guns-13': (context) => GunsScreen(body: body['data'][13]),
-        '/guns-14': (context) => GunsScreen(body: body['data'][14]),
-        '/guns-15': (context) => GunsScreen(body: body['data'][15]),
-        '/guns-16': (context) => GunsScreen(body: body['data'][16]),
-        '/guns-17': (context) => GunsScreen(body: body['data'][17]),
+        '/guns-odin': (context) => GunsScreen(body: body['data'][0]), //odin
+        '/guns-ares': (context) => GunsScreen(body: body['data'][1]), //ares
+        '/guns-vandal': (context) => GunsScreen(body: body['data'][2]), //vandal
+        '/guns-bulldog': (context) => GunsScreen(body: body['data'][3]), //phantom
+        '/guns-phantom': (context) => GunsScreen(body: body['data'][4]), //bulldog
+        '/guns-judge': (context) => GunsScreen(body: body['data'][5]), //judge
+        '/guns-bucky': (context) => GunsScreen(body: body['data'][6]), //bucky
+        '/guns-frenzy': (context) => GunsScreen(body: body['data'][7]), //frenzy
+        '/guns-classic': (context) => GunsScreen(body: body['data'][8]), //classic
+        '/guns-ghost': (context) => GunsScreen(body: body['data'][9]), //ghost
+        '/guns-sheriff': (context) => GunsScreen(body: body['data'][10]), //sheriff
+        '/guns-shorty': (context) => GunsScreen(body: body['data'][11]), //shorty
+        '/guns-operator': (context) => GunsScreen(body: body['data'][12]), //operator
+        '/guns-guardian': (context) => GunsScreen(body: body['data'][13]), //guardian
+        '/guns-marshal': (context) => GunsScreen(body: body['data'][14]), //marhsal
+        '/guns-specter': (context) => GunsScreen(body: body['data'][15]), //specter
+        '/guns-stinger': (context) => GunsScreen(body: body['data'][16]), //stinger
       },
       debugShowCheckedModeBanner: false,
     ),

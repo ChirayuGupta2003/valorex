@@ -17,7 +17,7 @@ class WeaponListCard extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
       child: InkWell(
         onTap: () {
-          Navigator.pushNamed(context, '/guns-1');
+          Navigator.pushNamed(context, '${index.route}');
         },
         child: Card(
           color: Color.fromRGBO(255, 82, 82, 0.8),
