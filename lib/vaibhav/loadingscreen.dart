@@ -37,10 +37,10 @@ class LoadingState extends State<Loading> {
   intScreen(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xFFfe4655),
+        backgroundColor: Color(0xFF0d0d0d),
         body: Center(
             child: SpinKitRotatingCircle(
-          color: Colors.white,
+          color: Colors.red,
           size: 50.0,
         )),
       ),
