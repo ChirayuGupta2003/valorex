@@ -2,7 +2,7 @@ import 'package:valorex/Chirayu/guns.dart';
 import 'package:flutter/material.dart';
 import 'package:valorex/Naman/main.dart';
 import 'package:valorex/vaibhav/loadingscreen.dart';
-import 'package:valorex/Mukul/main.dart';
+// import 'package:valorex/Mukul/Character_Main.dart';
 import 'package:valorex/Dhruv/maps.dart';
 import 'package:valorex/Nandika/gunsList.dart';
 import 'package:valorex/Mukul/Character_info/Brimstone.dart';
