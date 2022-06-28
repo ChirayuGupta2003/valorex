@@ -65,7 +65,7 @@ class Test extends StatelessWidget {
                     'hatches to weather the assault.',
                 style: TextStyle(
                   color: Colors.white70,
-                  fontSize: 15,
+                  fontSize: 17,
                   letterSpacing:1,
 
 
