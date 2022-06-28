@@ -2,8 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'Character_class.dart';
+// import 'Character_info.dart';
 
 void main() => runApp(MaterialApp(
+      home: AgentsCard(),
       debugShowCheckedModeBanner: false,
     ));
 
@@ -16,50 +18,23 @@ class AgentsCard extends StatefulWidget {
 
 class _HomeState extends State<AgentsCard> {
   List<Character> character_info = [
-    Character(
-        'BRIMSTONE',
-        'PHOENIX',
-        'assests/characters/Brimstone.png',
+    Character('BRIMSTONE', 'PHOENIX', 'assests/characters/Brimstone.png',
         'assests/characters/Phoenix.png'),
-    Character(
-        'SAGE',
-        'SOVA',
-        'assests/characters/Sage.png',
+    Character('SAGE', 'SOVA', 'assests/characters/Sage.png',
         'assests/characters/Sova.png'),
-    Character(
-        'VIPER',
-        'CYPHER',
-        'assests/characters/Viper.png',
+    Character('VIPER', 'CYPHER', 'assests/characters/Viper.png',
         'assests/characters/Cypher.png'),
-    Character(
-        'REYNA',
-        'KILLJOY',
-        'assests/characters/Reyna.png',
+    Character('REYNA', 'KILLJOY', 'assests/characters/Reyna.png',
         'assests/characters/KillJoy.png'),
-    Character(
-        'BREACH',
-        'OMEN',
-        'assests/characters/Breach.png',
+    Character('BREACH', 'OMEN', 'assests/characters/Breach.png',
         'assests/characters/Omen.png'),
-    Character(
-        'JETT',
-        'RAZE',
-        'assests/characters/Jett.png',
+    Character('JETT', 'RAZE', 'assests/characters/Jett.png',
         'assests/characters/Raze.png'),
-    Character(
-        'SKYE',
-        'YORU',
-        'assests/characters/Skye.png',
+    Character('SKYE', 'YORU', 'assests/characters/Skye.png',
         'assests/characters/Yoru.png'),
-    Character(
-        'ASTRA',
-        'KAY/O',
-        'assests/characters/Astra.png',
+    Character('ASTRA', 'KAY/O', 'assests/characters/Astra.png',
         'assests/characters/KAYO.png'),
-    Character(
-        'CHAMBER',
-        'NEON',
-        'assests/characters/Chamber.png',
+    Character('CHAMBER', 'NEON', 'assests/characters/Chamber.png',
         'assests/characters/Neon.png'),
   ];
 
@@ -234,8 +209,7 @@ class _HomeState extends State<AgentsCard> {
                           alignment: Alignment.center,
                           children: [
                             Image(
-                              image: AssetImage(
-                                  'assets/characters/Fade.png'),
+                              image: AssetImage('assets/characters/Fade.png'),
                               // height: 100,
                               // fit: BoxFit.contain,
                             ),
