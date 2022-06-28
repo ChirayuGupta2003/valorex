@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'quote.dart';
@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
           children: quotes.map((quote) => quoteTemplate(quote)).toList(),
         ),
 
-        
+
         drawer: Drawer(
           backgroundColor: Color(0xFF0f1923),
           child: Column(
