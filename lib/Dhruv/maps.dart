@@ -21,26 +21,22 @@ class Test extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                child: AppBar(
-                  title:Center(
-                    child: Column
-                  (
-                  children:[Container(margin:EdgeInsets.fromLTRB(0, 10, 30, 0)),
-                    Text(
-                            "Maps",
-                            style: TextStyle(
-                              fontFamily: 'Valorant1',
-                              fontSize: 35,
-                              color: Colors.white,),
-                          ),
-                    ]
-                        ),
-                      ),
-                  backgroundColor: Color(0xFF0f1923),
-                )
-              ),
+                  child: AppBar(
+                title:
+                  Text(
+                    "Maps",
+                    style: TextStyle(
+                      fontFamily: 'Valorant1',
+                      fontSize: 35,
+                      color: Colors.white,
+                    ),
+                  ),
+                centerTitle: true,
+
+                backgroundColor: Color(0xFF0f1923),
+              )),
               Container(
-                margin: EdgeInsets.fromLTRB(0,15,0, 0),
+                margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
                 height: 135,
                 child: Stack(
                   children: [
