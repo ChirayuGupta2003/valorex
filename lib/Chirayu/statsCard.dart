@@ -26,34 +26,40 @@ class StatsCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.white30,
-            ),
-            child: Center(
-              child: Text(
-                heading.toUpperCase(),
-                style: TextStyle(
-                  fontFamily: "Valorant2",
-                  color: Colors.white70,
-                  fontSize: 20,
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white30,
+              ),
+              child: Center(
+                child: Text(
+                  heading.toUpperCase(),
+                  style: TextStyle(
+                    fontFamily: "Valorant2",
+                    color: Colors.white70,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
           ),
-          Text(
-            value,
-            style: TextStyle(
-              fontSize: 35,
-              fontFamily: "Valorant2",
-              color: Colors.white70,
+          Expanded(
+            child: Text(
+              value,
+              style: TextStyle(
+                fontSize: 35,
+                fontFamily: "Valorant2",
+                color: Colors.white70,
+              ),
             ),
           ),
-          Text(
-            units.toUpperCase(),
-            style: TextStyle(
-              color: Colors.white30,
-              fontFamily: "Valorant2",
+          Expanded(
+            child: Text(
+              units.toUpperCase(),
+              style: TextStyle(
+                color: Colors.white30,
+                fontFamily: "Valorant2",
+              ),
             ),
           )
         ],
