@@ -181,6 +181,39 @@ class Test extends StatelessWidget {
                             borderRadius: BorderRadius.circular(24),
                             image: DecorationImage(
                                 fit: BoxFit.fitWidth,
+                                image: NetworkImage('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc54ad3a88d94a4d6/5eabe92eaf7e315106b4799b/bind1.jpg?auto=webp&width=915'),
+                            ),
+                          ),
+                          child: Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Text(
+                                'BIND',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 35,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Valorant1'),
+                              )),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: 135,
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(24),
+                            image: DecorationImage(
+                                fit: BoxFit.fitWidth,
                                 image: NetworkImage(
                                     'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7df0b99a582cc5aa/5eabe987b8a6356e4ddc0ca4/haven1.jpg?auto=webp&width=915')),
                           ),

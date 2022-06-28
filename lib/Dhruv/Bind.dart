@@ -38,7 +38,7 @@ class Test extends StatelessWidget {
 
                       style:TextStyle(
                           color: Colors.white,
-                          fontSize: 50,
+                          fontSize: 40,
                           fontWeight:FontWeight.bold,
                           fontFamily: 'Valorant1'
 
@@ -64,7 +64,7 @@ class Test extends StatelessWidget {
                     'flank.',
                 style: TextStyle(
                   color: Colors.white70,
-                  fontSize: 20,
+                  fontSize: 18,
                   letterSpacing:1,
 
 
