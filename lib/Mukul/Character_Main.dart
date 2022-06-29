@@ -75,8 +75,8 @@ class _HomeState extends State<Agents> {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
+                  image: AssetImage(
+                      'assets/background/background.jpg'),
                   fit: BoxFit.cover,
                 ),
                 borderRadius: BorderRadius.circular(15.0),
@@ -111,8 +111,8 @@ class _HomeState extends State<Agents> {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
+                  image: AssetImage(
+                      'assets/background/background.jpg'),
                   fit: BoxFit.cover,
                 ),
                 borderRadius: BorderRadius.circular(15.0),
@@ -154,12 +154,12 @@ class _HomeState extends State<Agents> {
       backgroundColor: Color(0xFF172535),
       appBar: AppBar(
         title: new Container(
-          height: 110,
+          height: 70,
           // width: 999999999,
           decoration: new BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage(
-                    'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
+                image: AssetImage(
+                    'assets/background/background.jpg'),
                 fit: BoxFit.cover,
               )),
           child: Column(
@@ -177,12 +177,12 @@ class _HomeState extends State<Agents> {
               ]),
         ),
         flexibleSpace: Image(
-          image: NetworkImage('https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
+          image: AssetImage('assets/background/background.jpg'),
           fit: BoxFit.cover,
         ),
         centerTitle: true,
         backgroundColor: Color(0xFF0f1923),
-        toolbarHeight: 100,
+        toolbarHeight: 80,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -192,7 +192,7 @@ class _HomeState extends State<Agents> {
                   character_info.map((e) => Character_Template(e)).toList(),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(4, 15, 0, 10),
+              padding: const EdgeInsets.fromLTRB(15, 15, 0, 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -201,8 +201,8 @@ class _HomeState extends State<Agents> {
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: NetworkImage(
-                              'https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7'),
+                          image: AssetImage(
+                              'assets/background/background.jpg'),
                           fit: BoxFit.cover,
                         ),
                         borderRadius: BorderRadius.circular(15.0),
@@ -213,8 +213,8 @@ class _HomeState extends State<Agents> {
                         alignment: Alignment.center,
                         children: [
                           Image(
-                            image: NetworkImage(
-                                'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt516d37c6c84fcda0/625db737c9aa404b76ddd594/Fade_Key_Art_587x900_for_Website.png'),
+                            image: AssetImage(
+                                'assets/characters/Fade.png'),
                             // height: 100,
                             // fit: BoxFit.contain,
                           ),
