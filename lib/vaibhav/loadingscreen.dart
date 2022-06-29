@@ -54,29 +54,32 @@ class LoadingState extends State<Loading> {
                 ),
               ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: SpinKitRotatingCircle(
-                    color: Colors.red,
-                    size: 50.0,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0,0,0,20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: SpinKitRotatingCircle(
+                      color: Colors.red,
+                      size: 50.0,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 5,
-                ),
-                Text(
-                  'Connecting to Servers',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1),
-                )
-              ],
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    'Connecting to Servers',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1),
+                  )
+                ],
+              ),
             ),
           ]),
         ),
