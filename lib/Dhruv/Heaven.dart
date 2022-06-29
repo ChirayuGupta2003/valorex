@@ -62,7 +62,7 @@ class Heaven extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xFF0f1923),
         title: Text(
-          'HEAVEN',
+          'HAVEN',
           style: TextStyle(
             fontSize: 35,
             fontFamily: 'Valorant1',
