@@ -55,7 +55,7 @@ class _GunsScreenState extends State<GunsScreen> {
                         style: TextStyle(
                           fontFamily: "Valorant1",
                           fontSize: 30,
-                          color: Colors.white70,
+                          color: Colors.white,
                         ),
                       ),
                     ],
