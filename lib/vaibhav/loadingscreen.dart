@@ -75,6 +75,7 @@ class LoadingState extends State<Loading> {
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 17,
+                        fontFamily: 'Valorant1',
                         fontWeight: FontWeight.bold,
                         letterSpacing: 1),
                   )
