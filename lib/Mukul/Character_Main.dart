@@ -75,8 +75,7 @@ class _HomeState extends State<Agents> {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(
-                      'assets/background/background.jpg'),
+                  image: AssetImage('assets/background/background.jpg'),
                   fit: BoxFit.cover,
                 ),
                 borderRadius: BorderRadius.circular(15.0),
@@ -111,8 +110,7 @@ class _HomeState extends State<Agents> {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(
-                      'assets/background/background.jpg'),
+                  image: AssetImage('assets/background/background.jpg'),
                   fit: BoxFit.cover,
                 ),
                 borderRadius: BorderRadius.circular(15.0),
@@ -155,13 +153,6 @@ class _HomeState extends State<Agents> {
       appBar: AppBar(
         title: new Container(
           height: 70,
-          // width: 999999999,
-          decoration: new BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                    'assets/background/background.jpg'),
-                fit: BoxFit.cover,
-              )),
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.end,
@@ -201,8 +192,7 @@ class _HomeState extends State<Agents> {
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage(
-                              'assets/background/background.jpg'),
+                          image: AssetImage('assets/background/background.jpg'),
                           fit: BoxFit.cover,
                         ),
                         borderRadius: BorderRadius.circular(15.0),
@@ -213,8 +203,8 @@ class _HomeState extends State<Agents> {
                         alignment: Alignment.center,
                         children: [
                           Image(
-                            image: AssetImage(
-                                'assets/characters/Fade.png'),
+                            image: NetworkImage(
+                                'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt516d37c6c84fcda0/625db737c9aa404b76ddd594/Fade_Key_Art_587x900_for_Website.png'),
                             // height: 100,
                             // fit: BoxFit.contain,
                           ),

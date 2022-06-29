@@ -62,19 +62,14 @@ class Ascent extends StatelessWidget {
       ),
       appBar: AppBar(
         backgroundColor: Color(0xFF0f1923),
-        title: Column(children: [
-          Container(
-            padding: EdgeInsets.fromLTRB(0, 10, 20, 0),
-            child: Center(
-                child: Text(
-              'ASCENT',
-              style: TextStyle(
-                fontSize: 35,
-                fontFamily: 'Valorant1',
-              ),
-            )),
+        title: Text(
+          'ASCENT',
+          style: TextStyle(
+        fontSize: 35,
+        fontFamily: 'Valorant1',
           ),
-        ]),
+        ),
+        centerTitle: true,
       ),
     );
   }

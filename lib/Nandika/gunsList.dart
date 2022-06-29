@@ -130,13 +130,6 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
         appBar: AppBar(
           title: new Container(
             height: 70,
-            // width: 999999999,
-            decoration: new BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                      'assets/background/background.jpg'),
-                  fit: BoxFit.cover,
-                )),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.end,
