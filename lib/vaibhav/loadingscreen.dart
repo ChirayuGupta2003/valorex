@@ -45,13 +45,26 @@ class LoadingState extends State<Loading> {
       child: SafeArea(
         child: Scaffold(
           backgroundColor: Color(0xFF0d0d0d),
-          body: Center(
+    body: Container(
+    decoration: BoxDecoration(
+    image: DecorationImage(
+    image: AssetImage("assets/Neon_Valoran.jpg"),
+    fit: BoxFit.cover,
+    ),
+    ),
+
+
+       child:  Align(
+      alignment: Alignment.bottomCenter,
               child: SpinKitRotatingCircle(
             color: Colors.red,
             size: 50.0,
-          )),
+                
+          ),
+          ),
         ),
       ),
+    ),
     );
   }
 }
