@@ -36,20 +36,7 @@ class _TacticalKnifeState extends State<TacticalKnife> {
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  Positioned(
-                    top: 5,
-                    left: 5,
-                    child: IconButton(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      icon: Icon(
-                        Icons.arrow_back,
-                        size: 30,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
+
                   Image.network(
                     "https://media.valorant-api.com/weapons/2f59173c-4bed-b6c3-2191-dea9b58be9c7/displayicon.png",
                   ),
@@ -65,6 +52,20 @@ class _TacticalKnifeState extends State<TacticalKnife> {
                         ),
                       ),
                     ],
+                  ),
+                  Positioned(
+                    top: 5,
+                    left: 5,
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: Icon(
+                        Icons.arrow_back,
+                        size: 30,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ],
               ),

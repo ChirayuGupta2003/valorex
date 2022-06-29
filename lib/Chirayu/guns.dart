@@ -42,20 +42,7 @@ class _GunsScreenState extends State<GunsScreen> {
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  Positioned(
-                    top: 5,
-                    left: 5,
-                    child: IconButton(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      icon: Icon(
-                        Icons.arrow_back,
-                        size: 30,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
+
                   Image.network(
                     body["displayIcon"],
                   ),
@@ -71,6 +58,20 @@ class _GunsScreenState extends State<GunsScreen> {
                         ),
                       ),
                     ],
+                  ),
+                  Positioned(
+                    top: 5,
+                    left: 5,
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: Icon(
+                        Icons.arrow_back,
+                        size: 30,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ],
               ),
