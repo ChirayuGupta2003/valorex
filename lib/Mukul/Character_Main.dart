@@ -183,9 +183,9 @@ class _HomeState extends State<Agents> {
                   character_info.map((e) => Character_Template(e)).toList(),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(15, 15, 0, 10),
+              padding: const EdgeInsets.fromLTRB(0, 15, 0, 10),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   InkWell(
                     onTap: () => Navigator.pushNamed(context, '/FADE'),
