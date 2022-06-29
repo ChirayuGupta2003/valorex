@@ -45,24 +45,44 @@ class LoadingState extends State<Loading> {
       child: SafeArea(
         child: Scaffold(
           backgroundColor: Color(0xFF0d0d0d),
-    body: Container(
-    decoration: BoxDecoration(
-    image: DecorationImage(
-    image: AssetImage("assets/Neon_Valoran.jpg"),
-    fit: BoxFit.cover,
-    ),
-    ),
+    body: Stack(
+      children:[ Container(
+      decoration: BoxDecoration(
+      image: DecorationImage(
+      image: AssetImage("assets/Neon_Valoran.jpg"),
+      fit: BoxFit.cover,
+      ),
+      ),),
 
 
-       child:  Align(
-      alignment: Alignment.bottomCenter,
-              child: SpinKitRotatingCircle(
-            color: Colors.red,
-            size: 50.0,
-                
+        Column( children:[
+
+
+
+
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,650,0,0),
+            child: Align(
+        alignment: Alignment.bottomCenter,
+                  child: SpinKitRotatingCircle(
+                color: Colors.red,
+                size: 50.0,
+
+              ),
+              ),
           ),
-          ),
+          SizedBox(height: 5,),
+          Text('Connecting to Servers',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 17,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1
+          ),)
+        ],
         ),
+          ]
+    ),
       ),
     ),
     );
