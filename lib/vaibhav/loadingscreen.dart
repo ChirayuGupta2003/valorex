@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:async';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:valorex/Naman/main.dart';
@@ -35,14 +36,21 @@ class LoadingState extends State<Loading> {
   }
 
   intScreen(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Color(0xFF0d0d0d),
-        body: Center(
-            child: SpinKitRotatingCircle(
-          color: Colors.red,
-          size: 50.0,
-        )),
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle(
+        statusBarColor: Color(0xFF0d0d0d),
+        statusBarBrightness: Brightness.light,
+        statusBarIconBrightness: Brightness.light,
+      ),
+      child: SafeArea(
+        child: Scaffold(
+          backgroundColor: Color(0xFF0d0d0d),
+          body: Center(
+              child: SpinKitRotatingCircle(
+            color: Colors.red,
+            size: 50.0,
+          )),
+        ),
       ),
     );
   }

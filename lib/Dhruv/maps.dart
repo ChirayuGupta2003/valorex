@@ -43,7 +43,7 @@ class Test extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: ()=>Navigator.pushNamed(context,'/pearl'),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
@@ -76,7 +76,7 @@ class Test extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: ()=>Navigator.pushNamed(context,'/fracture'),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
@@ -109,7 +109,7 @@ class Test extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: ()=>Navigator.pushNamed(context,'/breeze'),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
@@ -142,7 +142,7 @@ class Test extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: ()=>Navigator.pushNamed(context,'/icebox'),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
@@ -175,7 +175,7 @@ class Test extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: ()=>Navigator.pushNamed(context,'/bind'),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
@@ -208,7 +208,7 @@ class Test extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: ()=>Navigator.pushNamed(context,'/heaven'),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
@@ -220,7 +220,7 @@ class Test extends StatelessWidget {
                           child: Align(
                               alignment: Alignment.bottomCenter,
                               child: Text(
-                                'HEAVEN',
+                                'HAVEN',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     color: Colors.white,
@@ -241,7 +241,7 @@ class Test extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: ()=>Navigator.pushNamed(context,'/split'),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
@@ -274,7 +274,7 @@ class Test extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: ()=>Navigator.pushNamed(context,'/ascent'),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
