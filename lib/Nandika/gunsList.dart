@@ -115,7 +115,7 @@ class _ListViewHomePageState extends State<ListViewHomePage> {
         description: 'heavies',
         image: 'assets/guns/17.png'),
     Weapons(
-        route: '/gunshomescreen',
+        route: '/guns-knife',
         title: 'TACTICAL KNIFE',
         description: 'melee',
         image: 'assets/guns/18.png'),

@@ -2,21 +2,15 @@
 
 import 'package:flutter/material.dart';
 import 'statsCard.dart';
-import 'damageRange.dart';
-import 'damageValueWithRange.dart';
 
-class GunsScreen extends StatefulWidget {
-  const GunsScreen({Key? key, required this.body}) : super(key: key);
-  final body;
+class TacticalKnife extends StatefulWidget {
+  const TacticalKnife({Key? key}) : super(key: key);
 
   @override
-  State<GunsScreen> createState() => _GunsScreenState(body: body);
+  State<TacticalKnife> createState() => _TacticalKnifeState();
 }
 
-class _GunsScreenState extends State<GunsScreen> {
-  _GunsScreenState({required this.body}) : super();
-  final body;
-
+class _TacticalKnifeState extends State<TacticalKnife> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -57,13 +51,13 @@ class _GunsScreenState extends State<GunsScreen> {
                     ),
                   ),
                   Image.network(
-                    body["displayIcon"],
+                    "https://media.valorant-api.com/weapons/2f59173c-4bed-b6c3-2191-dea9b58be9c7/displayicon.png",
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Text(
-                        body["displayName"],
+                        "Tactical Knife",
                         style: TextStyle(
                           fontFamily: "Valorant1",
                           fontSize: 30,
@@ -122,9 +116,7 @@ class _GunsScreenState extends State<GunsScreen> {
                                 width: 4,
                               ),
                               Text(
-                                body["weaponStats"]["fireMode"] == null
-                                    ? "AUTO"
-                                    : "SEMI",
+                                "-",
                                 style: TextStyle(
                                   color: Colors.white70,
                                   fontFamily: "Valorant2",
@@ -145,9 +137,7 @@ class _GunsScreenState extends State<GunsScreen> {
                                 width: 4,
                               ),
                               Text(
-                                body["weaponStats"]["wallPenetration"]
-                                    .split("::")[1]
-                                    .toUpperCase(),
+                                "-",
                                 style: TextStyle(
                                   color: Colors.white70,
                                   fontFamily: "Valorant2",
@@ -167,15 +157,13 @@ class _GunsScreenState extends State<GunsScreen> {
                         children: <Widget>[
                           StatsCard(
                             heading: "fire rate",
-                            value: body["weaponStats"]["fireRate"].toString(),
+                            value: "-",
                             units: "rds/sec",
                             margin: EdgeInsets.fromLTRB(0, 8, 4, 4),
                           ),
                           StatsCard(
                             heading: "run speed",
-                            value: (6.75 *
-                                    body["weaponStats"]["runSpeedMultiplier"])
-                                .toStringAsFixed(2),
+                            value: "-",
                             units: "m/sec",
                             margin: EdgeInsets.fromLTRB(4, 8, 0, 4),
                           ),
@@ -186,16 +174,13 @@ class _GunsScreenState extends State<GunsScreen> {
                         children: [
                           StatsCard(
                             heading: "equip speed",
-                            value: body["weaponStats"]["equipTimeSeconds"]
-                                .toString(),
+                            value: "-",
                             units: "sec",
                             margin: EdgeInsets.fromLTRB(0, 4, 4, 4),
                           ),
                           StatsCard(
                             heading: "1st shot spread",
-                            value: body["weaponStats"]["adsStats"] != null
-                                ? "${body["weaponStats"]["firstBulletAccuracy"].toStringAsFixed(2)} / ${body["weaponStats"]["adsStats"]["firstBulletAccuracy"] < 0 ? 0 : body["weaponStats"]["adsStats"]["firstBulletAccuracy"].toStringAsFixed(2)}"
-                                : "${body["weaponStats"]["firstBulletAccuracy"].toStringAsFixed(2)}",
+                            value: "-",
                             units: "deg (hip/ads)",
                             margin: EdgeInsets.fromLTRB(4, 4, 0, 4),
                           ),
@@ -206,15 +191,13 @@ class _GunsScreenState extends State<GunsScreen> {
                         children: [
                           StatsCard(
                             heading: "reload speed",
-                            value: body["weaponStats"]["reloadTimeSeconds"]
-                                .toString(),
+                            value: "-",
                             units: "sec",
                             margin: EdgeInsets.fromLTRB(0, 4, 4, 8),
                           ),
                           StatsCard(
                             heading: "magazine",
-                            value:
-                                body["weaponStats"]["magazineSize"].toString(),
+                            value: "-",
                             units: "rds",
                             margin: EdgeInsets.fromLTRB(4, 4, 0, 8),
                           ),
@@ -222,63 +205,6 @@ class _GunsScreenState extends State<GunsScreen> {
                       ),
                     ],
                   ), // stats grid
-                  Container(
-                    height: 45,
-                    decoration: BoxDecoration(
-                      color: Colors.white30,
-                      border: Border(
-                        bottom: BorderSide(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: <Widget>[
-                            Expanded(
-                              flex: 2,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    padding: EdgeInsets.fromLTRB(3, 0, 0, 0),
-                                    child: Text(
-                                      "DAMAGE",
-                                      style: TextStyle(
-                                        color: Colors.white70,
-                                        fontSize: 20,
-                                        fontFamily: "Valorant2",
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ] +
-                          body["weaponStats"]["damageRanges"]
-                              .map<Widget>((data) => DamageRange(
-                                    rangeStart: data["rangeStartMeters"],
-                                    rangeEnd: data["rangeEndMeters"],
-                                  ))
-                              .toList(),
-                    ),
-                  ),
-                  DamageValueWithRange(
-                    bodyPart: "head",
-                    margin: EdgeInsets.fromLTRB(10, 10, 10, 5),
-                    data: body,
-                  ),
-                  DamageValueWithRange(
-                    bodyPart: "body",
-                    margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
-                    data: body,
-                  ),
-                  DamageValueWithRange(
-                    bodyPart: "leg",
-                    margin: EdgeInsets.fromLTRB(10, 5, 10, 10),
-                    data: body,
-                  ),
                 ],
               ),
             ),

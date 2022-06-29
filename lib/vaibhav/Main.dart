@@ -31,6 +31,7 @@ import 'package:valorex/Mukul/Character_info/Neon.dart';
 import 'package:valorex/Mukul/Character_info/Fade.dart';
 import 'package:valorex/Mukul/Character_info/Killjoy.dart';
 import 'package:valorex/Mukul/Character_info/Breach.dart';
+import 'package:valorex/Chirayu/tacticalKnife.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -95,6 +96,7 @@ void main() async {
             GunsScreen(body: body['data'][15]), //specter
         '/guns-stinger': (context) =>
             GunsScreen(body: body['data'][16]), //stinger
+        '/guns-knife': (context) => TacticalKnife(),
         '/pearl': (context) => Pearl(),
         '/ascent': (context) => Ascent(),
         '/bind': (context) => Bind(),

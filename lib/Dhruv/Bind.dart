@@ -71,7 +71,7 @@ class Bind extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(0, 10, 20, 0),
             child: Center(
                 child: Text(
-                  'Map',
+                  'BIND',
                   style: TextStyle(
                     fontSize: 35,
                     fontFamily: 'Valorant1',

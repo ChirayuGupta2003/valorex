@@ -15,26 +15,25 @@ class Ascent extends StatelessWidget {
       body: SafeArea(
         child: ListView(
           children: [
-            Image(image:NetworkImage('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt930666d9ab927326/5eabe9c45751b2150e57a42c/ascent1.jpg?auto=webp&width=915'),
+            Image(
+              image: NetworkImage(
+                  'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt930666d9ab927326/5eabe9c45751b2150e57a42c/ascent1.jpg?auto=webp&width=915'),
             ),
-
             Container(
-              margin: EdgeInsets.fromLTRB(20,20,20,0),
+              margin: EdgeInsets.fromLTRB(20, 20, 20, 0),
               child: Text(
                 'ASCENT',
                 textAlign: TextAlign.start,
                 style: TextStyle(
-                    color:Color(0xFFfc5b65) ,
+                    color: Color(0xFFfc5b65),
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Valorant1'),
               ),
             ),
             Container(
-
-              padding: EdgeInsets.fromLTRB(20,0,20,20),
+              padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
               child: Text(
-
                 'An open playground for small wars of '
                 'position and attrition divide two sites on '
                 'Ascent. Each site can be fortified by '
@@ -48,16 +47,16 @@ class Ascent extends StatelessWidget {
                   letterSpacing: 1.5,
                   fontFamily: "Valorant3",
                   fontWeight: FontWeight.bold,
-
                 ),
               ),
             ),
             Image(
-                  image: NetworkImage(
-                      'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt47bef6aa9e43d8ec/5ecd64df96a8996de38bbf8f/ascent-minimap-2.jpg?auto=webp&width=515'),
+              image: NetworkImage(
+                  'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt47bef6aa9e43d8ec/5ecd64df96a8996de38bbf8f/ascent-minimap-2.jpg?auto=webp&width=515'),
             ),
-            SizedBox(height: 10,)
-
+            SizedBox(
+              height: 10,
+            )
           ],
         ),
       ),
@@ -68,7 +67,7 @@ class Ascent extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(0, 10, 20, 0),
             child: Center(
                 child: Text(
-              'Map',
+              'ASCENT',
               style: TextStyle(
                 fontSize: 35,
                 fontFamily: 'Valorant1',

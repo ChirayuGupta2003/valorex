@@ -62,7 +62,7 @@ class Breeze extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(0, 10, 20, 0),
             child: Center(
                 child: Text(
-              'Map',
+              'BREEZE',
               style: TextStyle(
                 fontSize: 35,
                 fontFamily: 'Valorant1',
