@@ -62,21 +62,22 @@ class LoadingState extends State<Loading> {
                 children: [
                   Align(
                     alignment: Alignment.bottomCenter,
-                    child: SpinKitRotatingCircle(
+                    child: SpinKitSpinningLines(
                       color: Colors.red,
-                      size: 50.0,
+                      size: 40.0,
                     ),
                   ),
                   SizedBox(
-                    height: 5,
+                    height: 20,
                   ),
                   Text(
                     'Connecting to Servers',
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 17,
+                        fontFamily: "Valorant1",
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
-                        letterSpacing: 1),
+                        letterSpacing:0),
                   )
                 ],
               ),
