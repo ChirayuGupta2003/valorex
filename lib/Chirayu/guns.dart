@@ -4,21 +4,6 @@ import 'package:flutter/material.dart';
 import 'statsCard.dart';
 import 'damageRange.dart';
 import 'damageValueWithRange.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-
-void main() async {
-  var url = Uri.parse("https://valorant-api.com/v1/weapons");
-  var response = await http.get(url);
-  var body = jsonDecode(response.body);
-  runApp(
-    MaterialApp(
-      home: GunsScreen(
-        body: body["data"][4],
-      ),
-    ),
-  );
-}
 
 class GunsScreen extends StatefulWidget {
   const GunsScreen({Key? key, required this.body}) : super(key: key);
@@ -40,23 +25,25 @@ class _GunsScreenState extends State<GunsScreen> {
         body: ListView(
           children: [
             Container(
+              padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
               height: 130,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                    "https://scontent.fluh2-1.fna.fbcdn.net/v/t1.6435-9/87142187_213455970056218_2898787493811847168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=U30Hpjy751cAX_k7OrJ&_nc_ht=scontent.fluh2-1.fna&oh=00_AT-4wMfV2nnUPdBfC6THcTogxBe3uxMrlWYLXlXuIdhy4Q&oe=62DE0CC7",
+                  image: AssetImage(
+                    "assets/background/background.jpg",
                   ),
                   fit: BoxFit.cover,
                 ),
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(30),
-                  bottomRight: Radius.circular(30),
-                ),
+                // borderRadius: BorderRadius.only(
+                //   bottomLeft: Radius.circular(20),
+                //   bottomRight: Radius.circular(20),
+                // ),
               ),
               child: Stack(
                 alignment: Alignment.center,
                 children: [
+
                   Image.network(
                     body["displayIcon"],
                   ),
@@ -68,10 +55,24 @@ class _GunsScreenState extends State<GunsScreen> {
                         style: TextStyle(
                           fontFamily: "Valorant1",
                           fontSize: 30,
-                          color: Colors.white70,
+                          color: Colors.white,
                         ),
                       ),
                     ],
+                  ),
+                  Positioned(
+                    top: 5,
+                    left: 5,
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: Icon(
+                        Icons.arrow_back,
+                        size: 30,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ],
               ),

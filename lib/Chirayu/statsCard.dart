@@ -16,47 +16,54 @@ class StatsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: margin,
-      height: 100,
-      width: ((MediaQuery.of(context).size.width - 10) / 2) - 14,
-      decoration: BoxDecoration(
-        color: Colors.white24,
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.white30,
-            ),
-            child: Center(
-              child: Text(
-                heading.toUpperCase(),
-                style: TextStyle(
-                  fontFamily: "Valorant2",
-                  color: Colors.white70,
-                  fontSize: 20,
+    return Expanded(
+      child: Container(
+        margin: margin,
+        height: 100,
+        decoration: BoxDecoration(
+          color: Colors.white24,
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white30,
+                ),
+                child: Center(
+                  child: Text(
+                    heading.toUpperCase(),
+                    style: TextStyle(
+                      fontFamily: "Valorant2",
+                      color: Colors.white70,
+                      fontSize: 20,
+                    ),
+                  ),
                 ),
               ),
             ),
-          ),
-          Text(
-            value,
-            style: TextStyle(
-              fontSize: 35,
-              fontFamily: "Valorant2",
-              color: Colors.white70,
+            Expanded(
+              child: Text(
+                value,
+                style: TextStyle(
+                  fontSize: 35,
+                  fontFamily: "Valorant2",
+                  color: Colors.white70,
+                ),
+              ),
             ),
-          ),
-          Text(
-            units.toUpperCase(),
-            style: TextStyle(
-              color: Colors.white30,
-              fontFamily: "Valorant2",
-            ),
-          )
-        ],
+            Expanded(
+              child: Text(
+                units.toUpperCase(),
+                style: TextStyle(
+                  color: Colors.white30,
+                  fontFamily: "Valorant2",
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:async';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:valorex/Naman/main.dart';
@@ -35,14 +36,54 @@ class LoadingState extends State<Loading> {
   }
 
   intScreen(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Color(0xFF0d0d0d),
-        body: Center(
-            child: SpinKitRotatingCircle(
-          color: Colors.red,
-          size: 50.0,
-        )),
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle(
+        statusBarColor: Color(0xFF0d0d0d),
+        statusBarBrightness: Brightness.light,
+        statusBarIconBrightness: Brightness.light,
+      ),
+      child: SafeArea(
+        child: Scaffold(
+          backgroundColor: Color(0xFF0d0d0d),
+          body: Stack(children: [
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Neon_Valoran.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0,0,0,20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: SpinKitSpinningLines(
+                      color: Colors.red,
+                      size: 40.0,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    'Connecting to Servers',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: "Valorant1",
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing:0),
+                  )
+                ],
+              ),
+            ),
+          ]),
+        ),
       ),
     );
   }

@@ -96,18 +96,15 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         backgroundColor: Color(0xFF0f1923),
         appBar: AppBar(
-          title: Center(
-            child: Container(
-                margin: EdgeInsets.fromLTRB(0, 10, 30, 0),
-                child: Text(
-                  "ValoRex",
-                  style: TextStyle(
-                    fontFamily: 'Valorant1',
-                    fontSize: 35,
-                    color: Colors.white,
-                  ),
-                )),
+          title: Text(
+            "ValoRex",
+            style: TextStyle(
+              fontFamily: 'Valorant1',
+              fontSize: 35,
+              color: Colors.white,
+            ),
           ),
+          centerTitle: true,
           backgroundColor: Color(0xFF0f1923),
         ),
         body: Column(

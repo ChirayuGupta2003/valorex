@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class DamageValueWithRange extends StatelessWidget {
@@ -20,21 +19,21 @@ class DamageValueWithRange extends StatelessWidget {
       margin: margin,
       child: Row(
         children: <Widget>[
-          Expanded(
-              child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: Text(
-                    bodyPart.toUpperCase(),
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: "Valorant2",
-                        fontSize: 20),
-                  ))),
-        ] +
+              Expanded(
+                  child: Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        bodyPart.toUpperCase(),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: "Valorant2",
+                            fontSize: 20),
+                      ))),
+            ] +
             data["weaponStats"]["damageRanges"]
                 .map<Widget>(
                   (index) => Expanded(
-                  child: Text(
+                      child: Text(
                     index["${bodyPart}Damage"].round().toString(),
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -42,7 +41,7 @@ class DamageValueWithRange extends StatelessWidget {
                         fontFamily: "Valorant2",
                         fontSize: 20),
                   )),
-            )
+                )
                 .toList(),
       ),
     );
